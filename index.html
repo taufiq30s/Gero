@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>.parallax-container {height: 530px; }</style>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar-fixed" style="position: fixed;">
+                <nav>
+                    <div class="nav-wrapper navbaru">
+                        <a href="#" class="brand-logo">Gero</a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down option main">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Menu a</a></li>
+                            <li><a href="index.html">Menu b</a></li>
+                        </ul>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down option">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Card</a></li>
+                            <li><a href="#"><i class="material-icons">search</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>            
+        </header>
+        <div class="parallax-container">
+            <div class="main-product-info" style="opacity: 1">
+                <h1>Hello World</h1>
+                <p class="description">
+                    First String <br>
+                    Second String
+                </p>
+                <a href="#" class="btn">Click Me</a>
+            </div>
+            <div class="parallax"><img src="images/afQKZJL.png"></div>
+        </div>
+        <div class="row popular">
+            <div class="col s6 prod product1">
+                <span class="flow-text">Test Area</span>
+            </div>
+            <div class="col s6 prod product2">
+                <span class="flow-text">Test Area</span>
+            </div>
+        </div>
+        <div class="row popular">
+            <div class="col s6 prod product3">
+                <span class="flow-text">Test Area</span>
+            </div>
+            <div class="col s6 prod product4">
+                <span class="flow-text">Test Area</span>
+            </div>
+        </div> 
+        <div class="row popular">
+            <div class="col s6 prod product5">
+                <span class="flow-text">Test Area</span>
+            </div>
+            <div class="col s6 prod product6">
+                <span class="flow-text">Test Area</span>
+            </div>
+        </div>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container" style="line-height: 28px;">
+            © 2018 Gero Indonesia
+            <a class="grey-text text-lighten-4 right" style="font-size: 25px; font-weight: 700;" href="#!">Gero</a>
+            </div>
+          </div>
+        </footer>
+        
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.parallax');
+                var instances = M.Parallax.init(elems, 0);
+            });
+        </script>
+        
+    </body>
+  </html>
