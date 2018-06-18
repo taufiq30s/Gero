@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Login</title>
+
+	<style>
+		
+	</style>
+</head>
+
+<body onload="startTime()">
+<ul class="cb-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 03</span></li>
+            <li><span>Image 04</span></li>
+            <li><span>Image 05</span></li>
+            <li><span>Image 06</span></li>
+</ul>
+
+	<div class="navbar-fixed">
+
+		<!-- Main Navbar / Desktop Mode -->
+			<nav>
+				<div class="nav-wrapper navsign">
+					<a href="#!" class="brand-logo">Gero</a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Home</a></li>
+					</ul>
+				</div>	
+			</nav>
+		
+			<!-- Side Navbar / Mobile Mode -->
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="#">home</a></li>
+			</ul>
+
+	</div>
+		
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col s12 m8 offset-m2 login-form">
+				<form action="#">
+					<h4>Sign in</h4>
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate" required>
+						<label for="email">Email</label>
+					</div>
+
+					<div class="input-field col s12">
+						<input id="password" type="password" class="validate" required>
+						<label for="password">Password</label>
+					</div>
+
+					<div class="col s12 btn-submit">
+						<button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action">Sign in</button>
+                        <a href="register.html" class="btn waves-effect waves-light light-green darken-4" style="margin-left: 10px;">Not Have Account ?</a>
+					</div>
+				</form>
+			</div><!-- End login-form -->
+				
+		</div><!-- End container -->
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+		
+	</script>
+</body>
+</html>
+        
