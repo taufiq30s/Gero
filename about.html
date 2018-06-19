@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>About Us | Gero</title>
+        <style>
+            main{
+              padding-left: 315px;
+            }
+
+            @media only screen and (max-width : 992px) {
+              header, main, footer {
+                padding-left: 0;
+              }
+            }
+            footer{z-index: 10; position: relative;}
+            .sidenav{margin-top: 65px;}
+            .collapsible > li > .collapsible-header{padding: 0 32px;}
+            .collapsible > li:focus{border: none; box-shadow: none;}
+            .collapsible > li > .collapsible-body > ul > li > a{padding: 0 64px;}
+        </style>
+    </head>
+    <body>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href = "desktop.html">Desktop Computer</a></li>
+            <li><a href = "gdesktop.html">Gaming Computer</a></li>
+            <li><a href = "laptop.html">Entry Laptop</a></li>
+            <li><a href = "glaptop.html">Gaming Laptop</a></li>
+            <li><a href = "accesories.html">Computer Accesories</a></li>
+            <li><a href = "component.html">Computer Component</a></li>
+        </ul>
+        <header>
+            <div class="navbar-fixe" style="">
+                <nav>
+                    <div class="nav-wrapper navbaru">
+                        <a href="#" class="brand-logo">Gero</a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down option main-new">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+                        <ul id="nav-mobile right-nav-new" class="right hide-on-med-and-down option" style="margin-right: 30px;">
+                            <li>
+                                <div class="row">
+                                  <form>
+                                    <div class="input-field" style="margin-right: 20px;">
+                                      
+                                      <input id="search" type="search" placeholder="Search" class="search" required style="display: inline-block; height: 40px;">
+                                        
+                                      <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                    <ul class="autocomplete-content dropdown-content"></ul>
+                                    </div>
+                                  </form>
+                                </div>
+                            </li>
+                            <li><a href="login.html">My Account</a></li>
+                            <li><a href="#">Card(2)</a></li>                         
+                        </ul>
+                    </div>
+                </nav>
+                
+            </div>            
+        </header>
+        <ul id="slide-out" class="sidenav sidenav-fixed" style="z-index: 1; position: absolute;">
+            <li class="active"><a href="about.html" class=" waves-effect waves-red">About Us</a></li>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header waves-effect waves-red" href="tou.html">Terms and Conditions of Use</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="tou.html#general-terms" class="waves-effect waves-red">General Terms</a></li>
+                                <li><a href="tou.html#user-terms" class="waves-effect waves-red">User Terms</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#!" class="waves-effect waves-red">Privacy Policy</a></li>
+        </ul>
+        <main>
+            <div class="row">
+                <div class="col s11">
+                    <h1>About Us</h1>
+                    <p>Gero or <b>Gear Online</b> is one of the leading online IT marketplace in Indonesia that provides buying and selling facilities from consumers to consumers. Gero offers a Variety of products in different categories for the IT users or gamers. Gero presents a variety of payment methods, including cash-on-delivery (COD), comprehensive customer service, and easy return service.</p>
+                    <br>
+                    <br>
+                    <h3>Credit</h3>
+                    <ul>
+                        <li>M.Taufiq Hidayat Pohan - 171110029</li>
+                        <li>Diky Diwo Suwanto - 17171110401</li>
+                        <li>Rian Mandala Putra - 171113220</li>
+                        <li>Muhammad Ridho - 171112411</li>
+                    </ul>
+                    <p style="font-size: 12px;"><b>This Website is used Materialized CSS Framework.<br>
+                    © 2014-2018 Materialize, All rights reserved.<br>
+                        <a href="https://github.com/Dogfalo/materialize/blob/master/LICENSE" style="color: #757575;">MIT License</a></b></p>
+                </div>                
+            </div>
+        </main>
+        <footer class="page-footer" style="background: #857a7a">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Welcome to Gero</h5>
+                <p class="grey-text text-lighten-4">This is Gero, Gear Online, the best online shop for PC Gamer and IT Users. We only sell original and best product for your needs. With simple and fluid website design and easy payment, free deliveries and COD, we make it easy for you to get what tou want to have. So, dont worry again, lets shop in Gero.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Gero</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="about.html">About Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="tou.html">Term Of Services</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container" style="line-height: 28px;">
+             &copy; 2018 Gero Indonesia
+            <a class="grey-text text-lighten-4 right" style="font-size: 25px; font-weight: 700;" href="#!">Gero</a>
+            </div>
+          </div>
+        </footer>
+        
+        
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

@@ -21,6 +21,10 @@
     height: 40px;
     border-radius: 10px;
 }
+a:active, a:focus{outline: none; border: 0;}
+.sticky{position: fixed; top: 0;}
+.sticky:first-child{width:100%;}
+#slide-out{ position: absolute;}
 .navbar-fixed nav:before{
     background-blend-mode: exclusion;
     filter: blur(50px);

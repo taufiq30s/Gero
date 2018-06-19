@@ -23,8 +23,8 @@ $(document).ready(function(){
         coverTrigger: false, // Displays dropdown below the button
         alignment: 'left' ,// Displays dropdown with edge aligned to the left of button
         constrainWidth: true, 
-    }
-  );
+        }
+    );
     $('input.search').autocomplete({
         data: {
             "Headset" : null,
@@ -51,6 +51,15 @@ $(document).ready(function(){
 			
         }
     });
-})
+    
+    
+    $('.collapsible').collapsible();
+    $('.tabs').tabs();   
+    
+});
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
 
         
