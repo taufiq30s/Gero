@@ -1,0 +1,36 @@
+MSI GeForce GTX 1080 Ti 11GB DDR5X - Gaming X   
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 15,999,000
+
+MSI GeForce GTX 1080 Ti 11GB DDR5X - Gaming X   
+
+
+
+MSi GeForce GTX 1080 Ti 11GB DDR5X - Gaming X merupakan graphics card terbaru dari Nvidia yang menggunakan arsitektur Pascal. Pascal merupakan arsitektur yang menggunakan proses manufaktur 16nm FinFET terbaru yang memungkinkan konsumsi daya rendah dan menawarkan performa yang bagus. Dilengkapi dengan sistem pendingin msi Armor.
+
+
+
+Detail
+
+- Model Name: GeForce GTX 1080 Ti GAMING X 11G
+
+- Graphics Processing Unit: NVIDIA GeForce GTX 1080 Ti
+
+- Interface: PCI Express x16 3.0
+
+- Core Name: GP102-350
+
+- Cores: 3584 Units
+
+- Core Clocks: 1657 MHz / 1544 MHz (Gaming Mode)
+
+- Memory Clock Speed: 11016 MHz (Gaming / Silent )
+
+- Memory: 11GB GDDR5X
+
+- Memory Type: 352-bit
+
+- Output: DisplayPort x 2 (Version 1.4) / HDMI x 2 (Version 2.0) / DL-DVI-D
+
+- Power Comsumption: 600 W

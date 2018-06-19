@@ -1,0 +1,28 @@
+ASUS ROG Strix Z270-K Gaming Socket LGA 1151 Intel Motherboard
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 2,430,000
+
+
+Detail
+
+- CPU: Intel Socket 1151 for 7th/6th Generation Core i7/Core i5/Core i3/Pentium/Celeron Processors 
+
+- Chipset: Intel Z270
+
+- Memory: 4 x DIMM, Max. 64GB, Un-buffered Memory
+
+- Graphic: Integrated Graphics Processor- Intel HD Graphics support
+
+- Multi-GPU Support: Supports AMD CrossFireX Technology
+
+- Expansion Slots: 1 x PCIe 3.0/2.0 x16 (x16 mode), 1 x PCIe 3.0/2.0 x16 (max at x4 mode), 2 x PCIe 3.0/2.0 x1, 2 x PCI
+
+- LAN: Intel I219V, 1 x Gigabit LAN Controller(s)
+
+- Audio: Realtek ALC887 8-Channel High Definition Audio CODEC 
+
+- Operating System: Windows 10 64-bit, Windows 8.1 64-bit, Windows 7 32-bit, Windows 7 64-bit
+
+- Form Factor: ATX Form Factor
+

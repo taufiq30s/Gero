@@ -1,0 +1,28 @@
+NTEL 750 1.2TB PCI-E SSD
+2 Respon Pelanggan Garansi: 2 tahun garansi resmi
+Harga:
+Rp 16,999,000
+
+Performa Super Cepat, Tanpa Tanding
+Maksimalkan penglaman komputasi Anda hingga ke tingkat paling maksimal dengan Intel?Solid-State Drive 750 Series. Dengan mengkombinasikan PCIe 3.0 x4 dan keindahan interface NVMe, perangkat SSD ini mampu meningkatkan kecepatan performa, menurunkan tingkat latency, dan dapat secara drastic mengurangi beban CPU Anda. Kehadiran SSD 750 Series dari Intel merupakan angin segar bagi jutaan pengguna PC di dunia. Kinerja SSD yang super cepat mampu melenyapkan segala batasan yang selama ini dimiliki oleh PC dengan memori bertipe piringan Hard Disk. Di saat performa puncak Hard Disk saat ini masih berkutat di kisaran ambang atas kecepatan SATA II, SSD Intel mampu menawarkan terobosan melalui performa SSD yang bahkan bisa bertengger apik di kisaran ambang atas kecepatan SATA III. Dengan memasang SSD Intel pada PC, kini Anda tidak perlu lagi meragukan kecepatan kinerja komputer Anda, untuk selamanya.
+
+SSD Berbasis Interface NVMe
+Interface NVM (Non-Volatile Memory) Express yang secara perdana diperkenalkan Intel pada tahun 2014 lalu merupakan sebuah terobosan besar bagi jutaan pengguna PC di dunia. Infrastruktur penyimpanan yang notabene digunakan pada Data Center kini bisa Anda cicipi untuk Desktop PC di rumah Anda. Standar NVMe mampu menangani batasan kecepatan sebuah perangkat memori berbasis SATA dan AHCI untuk mengakses data pada perangkat memori NAND. NVMe dapat secara signifikan meningkatkan kinerja secara random maupun sekuensial pada memori berbasis SATA.
+
+
+SSD NVMe Intel dapat mengurangi tingkat latency, memungkinkan pekerjaan secara paralel dapat dilakukan dengan lebih cepat, dan penyederhanaan perintah pada Storage. Kinerja tanpa tanding SSD Intel NVMe seri 750 memungkinkan Anda dapat merancang dan membangun ragam konten yang lebih kaya, set data yang lebih besar, dan akses lebih cepat ke semua aset digital Anda. Intel SSD seri 750 menawarkan peningkatan efisiensi untuk beban pekerjaan Anda, mulai dari Computer Aided Drafting and Design (CADD), Computational Fluid Dynamics (CFD), Finite Element Analysis (FEA), dan Simulation.
+
+SSD NVMe untuk Consumer Desktop Pertama di Dunia
+Intel SSD 750 Series merupakan SSD berbasis NVMe pertama di dunia yang ditujukan khusus untuk para pengguna PC di rumah. SSD ini tentunya dibanderol harga yang lebih rendah dibanding kebanyakan SSD NVMe untuk kelas Enterprise di pasaran. Intel 750 Series tersedia dalam dua pilihan kapasitas: 400 GB dan 1.2 TB. Untuk memaksimalkan kinerja NAND, SSD ini sudah mendukung TRIM dan Garbage Collection yang bahkan masih jarang dimiliki oleh SSD PCI-e di pasaran saat ini. Intel SSD 750 Series cocok digunakan pada PC dengan sistem operasi Windows 8 dan 7, Linux dengan kernel terbaru, dan PC dengan sistem operasi yang belum mendukung TRIM.
+SSD Intel 750 Series mampu menawarkan kinerja yang mampu mengungguli semua SSD SATA III walau dipasang dengan mode RAID-0. Bagi Anda yang bekerja sebagai Editor Multimedia, pekerja desain grafis, atau Gamer profesional, memiliki PC dengan SSD Intel NVMe 750 Series bisa jadi merupakan impian Anda selama ini. kinerja Read dan Write data yang super cepat dapat memperpendek waktu Loading aplikasi atau grafis Game, serta mempercepat pekerjaan Anda.
+
+
+
+Kelebihan Intel SSD NVMe 750 Series:
+- Super Cepat, lebih cepat dibanding SSD SATA III
+- Interface NVMe untuk Consumer Desktop
+- Banderol harga lebih rendah dibanding SSD NVMe versi Enterprise
+- Support TRIM dan Garbage Collection
+- Beban kerja CPU lebih cepat dan efisien
+- Waktu Loading lebih cepat
+- Support 4K (Ultra High Definition) Video Creation

@@ -1,0 +1,58 @@
+MSI B360M Mortar Titanium/ 2x PCIEx1 / 2x PCIEx16 / DVI/ HDMI/ Display Intel Socket 1151 m-ATX Motherboard
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 2,150,000
+
+Detail
+
+- Socket: 1151
+
+- CPU (Max Support): i7
+
+- Chipset: Intel B360 Chipset
+
+- DDR4 Memory: 2666/ 2400/ 2133 MHz
+
+- Memory Channel: Dual
+
+- DIMM Slots: 4
+
+- Max Memory (GB): 64
+
+- PCI-EX16: 2
+
+- PCI-E Gen: Gen3
+
+- PCI-EX1: 2
+
+- SATAIII: 4
+
+- M.2 Slot: 2
+
+- Raid: 0/1/5/10
+
+- TPM (Header): 1
+
+- LAN: 10/100/1000*1
+
+- USB 3.1 Ports (Front): 1(Gen2, Type C), 2(Gen1, Type A)
+
+- USB 3.1 Ports (Rear): 1(Gen2, Type C), 1(Gen2, Type A)
+
+- USB 2.0 Ports (Front): 2
+
+- USB 2.0 Ports (Rear): 4
+
+- Audio Ports (Rear): Realtek ALC892 Codec
+
+- Display Port: 1
+
+- DVI-D: 1
+
+- HDMI: 1
+
+- DIRECTX: 12
+
+- Form Factor: Micro-ATX
+
+- Operating System: Support for Windows 10 64-bit

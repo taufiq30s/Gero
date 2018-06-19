@@ -1,0 +1,61 @@
+MSI H310M Gaming Artic/ 2x PCIEx1 / 1x PCIEx16 / DVI/ HDMI Intel Socket 1151 m-ATX Motherboard
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 1,450,000
+
+Detail
+
+- CPU Socket Type: LGA 1151
+
+- CPU Type: Supports 8th Generation Intel&reg; Core™ Processors (Socket 1151)
+
+- Supported CPU Technologies: Intel&reg; Turbo Boost Technology 2.0
+
+- Chipset: Intel H310
+
+- Number of Memory Slots: 2
+
+- Memory Type: DDR4
+
+- Memory Standart: 2666/ 2400/ 2133 MHz
+
+- Max Memory Supported: 64GB
+
+- Channel Supported: Dual Channel
+
+- Registered/Unbuffered: Unbuffered
+
+- Error Checking: No
+
+- PCI Express x16: 1 x PCI Express 3.0 x16 Slots
+
+- PCI Express x1: 12 x PCI Express 3.0 x1 Slots
+
+- SATA 6Gb/s: 4 x SATA3 6.0
+
+- M.2: 1 x M.2 slots (Key M)
+
+- Audio Chipset: Realtek ALC887 Codec
+
+- Audio Channel: 7.1-Channel High Definition Audio
+
+- LAN Chipset: 1x Intel I219-V Gigabit LAN controller
+
+- Max LAN Speed: 10/100/1000Mbps
+
+- PS/2: 1 x PS/2 mouse & keyboard combo port
+
+- DVI: 1 x DVI-D port
+
+- HDMI: 1 x HDMI
+
+- RJ45: 1 x LAN (RJ45) port(s)
+
+- USB 3.1: 2 x USB 3.1 Gen 1 ports
+
+- USB 2.0: 4 x USB 2.0 Type-A ports
+
+- Audio Ports: 3 x Audio jack(s)
+
+- Form Factor: m-ATX Form Factor
+

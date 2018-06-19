@@ -1,72 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<title>Login</title>
+	<title>Register to Gero</title>
 
-	<style>
-		.login-form {
-			margin-top: 50px;
-			background-color: #fff;
-			border: 1px solid #ccc;
-			height: auto;
-		}
-
-		input:not([type]), input[type=text]:not(.browser-default), 
-		input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), 
-		input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), 
-		input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), 
-		input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), 
-		input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), 
-		textarea.materialize-textarea {
-			border-bottom: 1px solid #dddddd;
-		}
-
-		.btn-submit {
-			margin-bottom: 20px;
-		}
-
-		a.brand-logo {
-			color: #333;
-		}
-
-		nav {
-			box-shadow: none;
-		}
-
-		nav ul a {
-			color: #333;
-		}
-	</style>
 </head>
 
-<body>
+<body onload="startTime()">
+<ul class="cb-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 03</span></li>
+            <li><span>Image 04</span></li>
+            <li><span>Image 05</span></li>
+            <li><span>Image 06</span></li>
+</ul>
 
-	<div class="nav">
+	<div class="navbar-fixed">
 
 		<!-- Main Navbar / Desktop Mode -->
 			<nav>
-				<div class="nav-wrapper grey lighten-5">
-					<a href="#!" class="brand-logo">Logo</a>
+				<div class="nav-wrapper navsign">
+					<a href="#!" class="brand-logo">Gero</a>
 					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down">
-						<li><a href="#">Menu</a></li>
-						<li><a href="#">Menu</a></li>
-						<li><a href="#">Menu</a></li>
-						<li><a href="#">Menu</a></li>
+						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>	
 			</nav>
 		
 			<!-- Side Navbar / Mobile Mode -->
 			<ul class="sidenav" id="mobile-demo">
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Menu</a></li>
+				<li><a href="#">home</a></li>
 			</ul>
 
 	</div>

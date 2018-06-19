@@ -1,0 +1,50 @@
+DIGITAL ALLIANCE GeForce GTX 1070 Dual 8GB GDDR5
+1 Respon Pelanggan Garansi: 2 tahun garansi resmi
+Harga:
+Rp 7,359,000
+
+Detail
+
+- Interface: PCI Express 3.0 x16
+
+- Chipset Manufacturer: NVIDIA
+
+- GPU: GeForce GTX 1070
+
+- Core Clock: 1506 MHz
+
+- Boost Clock: 1683 MHz
+
+- Effective Memory Clock: 8 Gbps
+
+- Memory Size: 8 GB
+
+- Memory Interface: 256 bits
+
+- Memory Type: GDDR5
+
+- HDMI: 1 (version 2.0b)
+
+- DisplayPort: 3 (version 1.4)
+
+- DVI: 1 (Dual-link DVI-D)
+
+- Maximum Display: 4
+
+- Max Resolution: 7680x4320@60Hz
+
+- SLI Support: Yes - SLI HB Bridge Supported
+
+- Cooler: 2 Fans
+
+- System Requirements: Power Consumption: 150 W, Recomended PSU: 500 W
+
+- Power Connector: 1 (8-Pin)
+
+- HDCP Ready: Yes
+
+- Form Factor: ATX
+
+- Card Dimension: 285 x 133 x - mm
+
+- Slot Width: 2.5 Slot

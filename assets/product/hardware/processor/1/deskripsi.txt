@@ -1,0 +1,26 @@
+INTEL Core i3-8100 3.7 Ghz 6M Cache 4 Core Processor
+1 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 2,135,000
+
+Processor Number: i3-8100
+
+- Interface: LGA 1151
+
+- Processor Base Frequency: 3.60 GHz
+
+- Cache: 6 MB
+
+- Bus Speed: 8 GT/s DMI3
+
+- TDP: 65 W
+
+- Max Memory Size (dependent on memory type): 64 GB
+
+- Memory Types: DDR4-2400
+
+- Processor Graphics: Intel UHD Graphics 630
+
+- Graphics Base Frequency: 350 MHz
+
+- Graphics Max Dynamic Frequency: 1.10 GHz

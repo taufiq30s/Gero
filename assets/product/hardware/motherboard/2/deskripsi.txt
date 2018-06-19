@@ -1,0 +1,28 @@
+ASUS TUF Z370 Pro Gaming Socket 1151 Intel Motherboard
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 3,550,000
+
+
+Detail
+
+- CPU: Intel Socket 1151 for 8th Generation Core™ Processors  
+
+- Chipset: Intel Z370
+
+- Memory: 4 x DIMM, Max. 64GB, Un-buffered Memory
+
+- Graphic: Integrated Graphics Processor, Intel HD Graphics support 
+
+- Multi-GPU Support: Supports NVIDIA&reg; 2-Way SLI™ Technology, Supports AMD 2-Way CrossFireX Technology
+
+- Expansion Slots: 2 x PCIe 3.0/2.0 x16 (x16, x8/x8, x8/x4+x4, x8+x4+x4/x0), 1 x PCIe 3.0/2.0 x16 (max at x2 mode), 3 x PCIe 3.0/2.0 x1 
+
+- LAN: Intel I219V, 1 x Gigabit LAN Controller(s), ASUS Turbo LAN Utility, TUF LANGuard
+
+- Audio: Realtek ALC887 8-Channel High Definition Audio CODEC 
+
+- Operating System: Windows 10 64-bit
+
+- Form Factor: ATX Form Factor
+

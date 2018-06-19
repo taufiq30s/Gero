@@ -1,0 +1,30 @@
+ASUS ROG STRIX GTX 1080 Ti 11G OC Gaming GDDR5
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 19,499,0002% OFF
+
+Detail
+
+- Graphics Engine: NVIDIA GeForce GTX 1080 TI
+
+- Bus Standard: PCI Express 3.0
+
+- OpenGL: OpenGL 4.5
+
+- Video Memory: GDDR5X 11GB
+
+- Engine Clock: OC Mode - GPU Boost Clock: 1708 MHz, GPU Base Clock: 1594 MHz ; Gaming Mode (Default) - GPU Boost Clock: 1683 MHz, GPU Base Clock: 1569 MHz
+
+- CUDA Core: 3584
+
+- Memory Clock: 11100 MHz (OC Mode), 11010 MHz (Gaming Mode)
+
+- Memory Interface: 352-bit
+
+- Resolution: 7680 x 4320
+
+- Interface: DVI Output: Yes x 1 (Native) (DVI-D); HDMI Output: Yes x 2 (Native) (HDMI 2.0); - Display Port: Yes x 2 (Native) (Regular DP); HDCP Support: Yes
+
+- Power Connectors: 2 x 8-pin
+
+- Dimensions: 29.8 x 13.4 x 5.25 cm

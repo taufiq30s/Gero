@@ -31,11 +31,22 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
                         </ul>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down option">
+                        <ul id="nav-mobile right-nav-new" class="right hide-on-med-and-down option" style="margin-right: 30px;">
+                            <li>
+                                <div class="row">
+                                  <form>
+                                    <div class="input-field" style="margin-right: 20px;">
+                                      
+                                      <input id="search" type="search" placeholder="Search" class="search" required style="display: inline-block; height: 40px;">
+                                        
+                                      <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                    <ul class="autocomplete-content dropdown-content"></ul>
+                                    </div>
+                                  </form>
+                                </div>
+                            </li>
                             <li><a href="#">My Account</a></li>
-                            <li><a href="#">Card</a></li>
-                            <li><a href="#"><i class="material-icons">search</i></a></li>
-                            
+                            <li><a href="#">Card</a></li>                         
                         </ul>
                     </div>
                 </nav>
@@ -43,39 +54,1128 @@
             </div>            
         </header>
         <div class="parallax-container">
-            <div class="main-product-info" style="opacity: 1">
-                <h1>Hello World</h1>
-                <p class="description">
-                    First String <br>
-                    Second String
+            <div class="main-product-info">
+                <h1>Welcome to Gero</h1>
+                <p class="description grey-text text-lighten-1">
+                    Get your PC Game with best price.
                 </p>
-                <a href="#" class="btn">Click Me</a>
+                <a href="#" class="btn">Starts from Rp 23.899.000 </a>
             </div>
-            <div class="parallax"><img src="images/afQKZJL.png"></div>
+            <div class="parallax"><img src="images/main.jpg"></div>
         </div>
         <div class="row popular">
-            <div class="col s6 prod product1">
-                <span class="flow-text">Test Area</span>
+            <div class="col s6 prod product1 deep-orange darken-3">
+                <div class="product-info">
+                    <span class="flow-text">Get Best Gaming Performance</span>
+                    <span class="flow-text">with Best Headphone</span>
+                    <p class="grey-text text-lighten-2">Get your best Headphone for your best experience gaming.</p>
+                    <a href="#" class="btn">Start from rp 500.000</a>
+                </div>
+                <div class="product-img"></div>
             </div>
             <div class="col s6 prod product2">
-                <span class="flow-text">Test Area</span>
+                <div class="product-info">
+                    <span class="flow-text">Play your Game Anyware</span>
+                    <span class="flow-text">with Best Gaming Laptop</span>
+                    <p class="grey-text text-lighten-1">Get your best Gaming Laptop with best spesification for your best experience gaming.</p>
+                    <a href="#" class="btn">Start From Rp 10.000.000</a>
+                </div>
+                <div class="product-img"></div>
             </div>
         </div>
         <div class="row popular">
             <div class="col s6 prod product3">
-                <span class="flow-text">Test Area</span>
+                <div class="product-info">
+                    <span class="flow-text">Best Mechanic Keyboard </span>
+                    <span class="flow-text">for your Gaming and other purpose</span>
+                    <p class="grey-text text-lighten-1">Get your best Mechanic Keyboard for your gaming or you can use for coding and other purpose that need accuarity. You can check <a href="https://www.daskeyboard.com/blog/mechanical-keyboard-guide/" target="_blank">this guide</a> so you can get best durability and confort keyboard for you and you can get tips for maintaince your keyboard.</p>
+                    <a href="#" class="btn">Know your keyboard ? Lets go</a>
+                </div>
+                <div class="product-img"></div>
             </div>
-            <div class="col s6 prod product4">
-                <span class="flow-text">Test Area</span>
+            <div class="col s6 prod product4 red darken-4">
+                <div class="product-info">
+                    <span class="flow-text">Need Upgrade your PC Hardware?</span>
+                    <p class="grey-text text-lighten-1">Get your best original Processor, Graphic Card, SSD, and many more with best price.</p>
+                    <a href="#" class="btn">Check it now</a>
+                </div>
+                <div class="product-img"></div>
             </div>
         </div> 
         <div class="row popular">
-            <div class="col s6 prod product5">
-                <span class="flow-text">Test Area</span>
+            <div class="col s6 prod product5 blue darken-3">
+                <div class="product-info">
+                    <span class="flow-text">Desktop PC for your work</span>
+                    <p class="grey-text text-lighten-1">Need Desktop PC for your work?<br> Get best powerfull Desktop PC for improve your productivity.</p>
+                    <a href="#" class="btn">Check it now</a>
+                </div>
+                <div class="product-img"></div>
             </div>
             <div class="col s6 prod product6">
-                <span class="flow-text">Test Area</span>
+                <div class="product-info">
+                    <span class="flow-text">Get More Portable and More Stylish</span>
+                    <span class="flow-text">with Best Laptop</span>
+                    <p class="grey-text text-lighten-1">Do you need Laptop for your work?<br> Get best laptop with any type according to your need only from Rp 3.500.000 .</p>
+                    <a href="#" class="btn">Check it now</a>
+                </div>
+                <div class="product-img"></div>
             </div>
+        </div>
+        <div class="tag_accesoris">
+            <div class="row">
+                <div class="col s12 center">
+                    <h4>Popular Products</h4>
+                </div>
+                <div class="col s12 center">
+                    <button class="tab all">ALL</button>
+                    <button class="tab mac">PC</button>
+                    <button class="tab ipod">Laptop</button>
+                    <button class="tab iphone">Accesories</button>
+                    <button class="tab ipad">PC Hardware</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider" id="all">
+            <a href="#!" class="hide-on-small-only prev"><img src="images/prev.png"></a>
+            <div class="carousel row slider2">
+                <a class="carousel-item no-white" href="#">
+                    <img src="assets/product/laptop/gaming/Asus/4/asus_asus-fx503vd-core-i5-gaming-laptop--8gb-ddr4--1tb-hdd--gtx1050-4gb--win10----black_full02.jpg">
+                    <div class="col-details">
+                        <p>Asus FX503VD Core i5 Gaming Laptop [8GB DDR4/ 1TB HDD/ GTX1050 4GB/ Win10] - Black</p>
+                    </div>
+                    <div class="price">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 12.299.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="carousel-item no-white">
+                    <img src="assets/product/laptop/2in1/lenovo/8/lenovo_lenovo-ideapad-yoga-700-14--80qd006did-putih-notebook--14-fhd-i7-skylake-256gb-ssd-nvidia-win-10----backpack_full02.jpg">
+                    <div class="col-details">
+                        <p>Lenovo IdeaPad Yoga 700 14" 80QD006DID Putih Notebook [14"FHD/i7 Skylake/256GB SSD/nVidia/Win 10] + Backpack</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 15.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/36/acer_acer-predator-g1-710-gaming-desktop-pc--geforce-gtx1070-8gb-_full02.jpg">
+                    <div class="col-details">
+                        <p>Acer Predator G1-710 Gaming Desktop PC [GeForce GTX1070 8GB]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 28.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/10/nHBfsgAACQAAAAgAB2I7BQACvVA.png">
+                    <div class="col-details">
+                        <p>LENOVO Desktop PC IC300-20ISH-AID 21.5" Monitor/i7-6700/4GB/1TB/NVIDIA GeForce GT720 2GB/DOS - Black</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 11.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/keyboard/4/nHBfsgAAAQAAAAkANdxCNwACj10%20-min.jpg">
+                    <div class="col-details">
+                        <p>HAVIT Keyboard Gaming Backlite Usb 3.0 HV-KB414L</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 129.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/mouse/8/nHBfsgAABAAAABIAAV-QbgAA71E%20-min.jpg">
+                    <div class="col-details">
+                        <p>Logitech G302 Daedalus Prime MOBA Gaming Mouse - Hitam</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 489.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/headphone/10/nHBfsgAAAQAAABkAAaZBtwACXsc%20-min.jpg">
+                    <div class="col-details">
+                        <p>PHILIPS SHS 5200 SPORT HEADPHONE HITAM</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 213.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/headphone/2/nHBfsgAABwAAAAQAAHHMbwAAhg0%20-min.jpg">
+                    <div class="col-details">
+                        <p>Audio Technica ATH-M20X Monitoring Headphone</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 485.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/mousepad/16/nHBfsgAACgAAABMAMwu59QAC_vQ%20-min.jpg">
+                    <div class="col-details">
+                        <p>HAVIT Mousepad Gaming HV-MP838</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 15.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/mouse/14/nHBfsgAABwAAAB0AJFWgtQADPN4%20-min.jpg">
+                    <div class="col-details">
+                        <p>TT eSports Saphira Team DK Series Gaming Mouse</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 473.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/motherboard/5/nHBfsgAAAgAAAAYANtrLXwADEkU%20-min.jpg">
+                    <div class="col-details">
+                        <p>ASUS Prime Z370-P Socket 1151 Intel Motherboard</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 3.200.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/motherboard/3/nHBfsgAAugAAABwAAFpCxAADurM%20-min.jpg">
+                    <div class="col-details">
+                        <p>MSI H310M Gaming Artic/ 2x PCIEx1 / 1x PCIEx16 / DVI/ HDMI Intel Socket 1151 m-ATX Motherboard</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 1.450.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/ssd/7/sandisk_sandisk-ssd-plus-sdssda-g26-solid-state-drive--240-gb-_full02%20-min.jpg">
+                    <div class="col-details">
+                        <p>SanDisk - SSD Plus Solid State Drive [240 GB/SDSSDA-240G-G26]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 1.152.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/keyboard/16/nHBfsgAAAgAAAAQAEZTnFwAHTVg%20-min.jpg">
+                    <div class="col-details">
+                        <p>Mini Wireless Keyboard Multi-media Remote Control Touchpad Handheld Keyboard</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 161.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/4/nHBfsgAABAAAABUAEjtjbwAAf18.jpg">
+                    <div class="col-details">
+                        <p>ACER Aspire TC-780 [DT.B89SN.002]19.5"/Core i7-7700U/8GB/1TB/Nvidia Geforce GT720 2GB/DOS - Black</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 11.799.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/asus/14/asus-x555qg-bx101d-amd-a10-9600p-4gb-ddr4-1tb-r5-r6-m435dx-15-6-dos-0896-60135721-e7ab3a4d4c748d6b52e3ec6b3b2f8ef1-catalog.jpg_340x340q80.jpg_.webp">
+                    <div class="col-details">
+                        <p>Asus X555QA-BX101T Notebook - Black [AMD A10-9620P/4GB/1TB/Radeon R7/15.6Inch/Windows 10]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 5.599.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/apple/10/27807_c3f56733-1d1d-457a-ad08-014c2fff02a3_2048_0.jpg">
+                    <div class="col-details">
+                        <p>Apple MacBook Pro MF839 Silver Notebook [13 Retina Display]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 18.999.999
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/2in1/hp/4/hp_hp-pavilion-x360---14-ba164tx-silver_full05.jpg">
+                    <div class="col-details">
+                        <p>HP Pavilion x360 14-BA164tx Laptop - Silver</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 14.899.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/gpu/4/nHBfsgAADAAAAB0AD5FsTQACI5c-min.png">
+                    <div class="col-details">
+                        <p>GIGABYTE Radeon RX VEGA 64 GAMING OC 8G - GV-RXVEGA64GAMING OC-8GD</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 13.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/gpu/10/nHBfsgAAEAAAAAcAAcV1dgAKDHE%20-min.jpg">
+                    <div class="col-details">
+                        <p>ALAX nVidia Geforce GTX 1060 OC (OVERCLOCK) 6GB DDR5 - Dual Fan</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 5.179.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/processor/6/ryzen_amd-ryzen-5-1400-box-cpu-prosesor_full03%20-min.jpg">
+                    <div class="col-details">
+                        <p>AMD RYZEN 5 1400 BOX CPU Prosesor</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 2.399.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/6/nHBfsgAAGwAAAAgAEOUIrwABiZg.jpg">
+                    <div class="col-details">
+                        <p>DELL OptiPlex 7050MT 21.5" E2216H/Core i7-7700/8GB/1TB/AMD R7 450X 4GB/Win10 Pro - Black</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 16.499.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/acer/12/As_ES1-132_Black-photogallery-02.png">
+                    <div class="col-details">
+                        <p>Acer Aspire ES1-132 Notebook - Black [11 Inch/ N3350/ 2GB/ 500GB/ Win 10]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 3.565.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/asus/10/asus_asus-a442ur-ga041t-dark-grey--core-i5-8250u-4gb-1tb-gt930mx-2gb-14--win10_full04.jpg">
+                    <div class="col-details">
+                        <p>Asus E203NAH-FD411T Notebook - Star Grey [N3350/4GB/500GB/11.6 Inch/Win 10]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 3.542.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/12/nHBfsgAAjwAAAAEAANJdUgACpFA.png">
+                    <div class="col-details">
+                        <p>LENOVO Ideacentre AIO 520-8EID 23.8" FHD/Intel Core i7-7700T/4GB/2TB/AMD Radeon 530 2GB/DOS - Gray</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 12.499.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/26/acer_acer-aspire-xc-780-ci3-6100-4ddr4-1t-vga-dos_full02.jpg">
+                    <div class="col-details">
+                        <p>Acer Aspire XC 780 Desktop PC [Ci3-6100/4GB DDR4/1TB]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 7.500.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/processor/2/nHBfsgAABAAAAB4ANqAStQABGRU%20-min.jpg">
+                    <div class="col-details">
+                        <p>INTEL Core i5-7400 2.4 GHz LGA 1151 Kaby Lake - Cache 6MB - CORE/THREADS 4/4</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 2.649.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/21/nHBfsgAAEwAAABwAC5o6QAACWSQ.jpg">
+                    <div class="col-details">
+                        <p>LENOVO AIO Y910-27ISH 27" Gaming PC - F0CJ0039ID</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 36.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                
+
+            </div>
+            <a href="#!" class="hide-on-small-only next"><img src="images/next.png"></a>
+        </div>
+        <div class="slider" id="mac">
+            <a href="#!" class="hide-on-small-only prev_mac" onclick="coba()"><img src="images/prev.png"></a>
+            <div class="carousel carousel2 row slider2">
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/36/acer_acer-predator-g1-710-gaming-desktop-pc--geforce-gtx1070-8gb-_full02.jpg">
+                    <div class="col-details">
+                        <p>Acer Predator G1-710 Gaming Desktop PC [GeForce GTX1070 8GB]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 28.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/10/nHBfsgAACQAAAAgAB2I7BQACvVA.png">
+                    <div class="col-details">
+                        <p>LENOVO Desktop PC IC300-20ISH-AID 21.5" Monitor/i7-6700/4GB/1TB/NVIDIA GeForce GT720 2GB/DOS - Black</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 11.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/4/nHBfsgAABAAAABUAEjtjbwAAf18.jpg">
+                    <div class="col-details">
+                        <p>ACER Aspire TC-780 [DT.B89SN.002]19.5"/Core i7-7700U/8GB/1TB/Nvidia Geforce GT720 2GB/DOS - Black</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 11.799.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/6/nHBfsgAAGwAAAAgAEOUIrwABiZg.jpg">
+                    <div class="col-details">
+                        <p>DELL OptiPlex 7050MT 21.5" E2216H/Core i7-7700/8GB/1TB/AMD R7 450X 4GB/Win10 Pro - Black</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 16.499.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/12/nHBfsgAAjwAAAAEAANJdUgACpFA.png">
+                    <div class="col-details">
+                        <p>LENOVO Ideacentre AIO 520-8EID 23.8" FHD/Intel Core i7-7700T/4GB/2TB/AMD Radeon 530 2GB/DOS - Gray</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 12.499.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/26/acer_acer-aspire-xc-780-ci3-6100-4ddr4-1t-vga-dos_full02.jpg">
+                    <div class="col-details">
+                        <p>Acer Aspire XC 780 Desktop PC [Ci3-6100/4GB DDR4/1TB]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 7.500.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>               
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/desktop/21/nHBfsgAAEwAAABwAC5o6QAACWSQ.jpg">
+                    <div class="col-details">
+                        <p>LENOVO AIO Y910-27ISH 27" Gaming PC - F0CJ0039ID</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 36.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+
+            </div>
+            <a href="#!" class="hide-on-small-only next_mac"><img src="images/next.png"></a>
+        </div>
+        <div class="slider" id="ipod">
+            <a href="#!" class="hide-on-small-only prev_ipod"><img src="images/prev.png"></a>
+            <div class="carousel carousel3 row slider2">
+                <a class="carousel-item no-white" href="#">
+                    <img src="assets/product/laptop/gaming/Asus/4/asus_asus-fx503vd-core-i5-gaming-laptop--8gb-ddr4--1tb-hdd--gtx1050-4gb--win10----black_full02.jpg">
+                    <div class="col-details">
+                        <p>Asus FX503VD Core i5 Gaming Laptop [8GB DDR4/ 1TB HDD/ GTX1050 4GB/ Win10] - Black</p>
+                    </div>
+                    <div class="price">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 12.299.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="carousel-item no-white">
+                    <img src="assets/product/laptop/2in1/lenovo/8/lenovo_lenovo-ideapad-yoga-700-14--80qd006did-putih-notebook--14-fhd-i7-skylake-256gb-ssd-nvidia-win-10----backpack_full02.jpg">
+                    <div class="col-details">
+                        <p>Lenovo IdeaPad Yoga 700 14" 80QD006DID Putih Notebook [14"FHD/i7 Skylake/256GB SSD/nVidia/Win 10] + Backpack</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 15.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/asus/14/asus-x555qg-bx101d-amd-a10-9600p-4gb-ddr4-1tb-r5-r6-m435dx-15-6-dos-0896-60135721-e7ab3a4d4c748d6b52e3ec6b3b2f8ef1-catalog.jpg_340x340q80.jpg_.webp">
+                    <div class="col-details">
+                        <p>Asus X555QA-BX101T Notebook - Black [AMD A10-9620P/4GB/1TB/Radeon R7/15.6Inch/Windows 10]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 5.599.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/apple/10/27807_c3f56733-1d1d-457a-ad08-014c2fff02a3_2048_0.jpg">
+                    <div class="col-details">
+                        <p>Apple MacBook Pro MF839 Silver Notebook [13 Retina Display]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 18.999.999
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/2in1/hp/4/hp_hp-pavilion-x360---14-ba164tx-silver_full05.jpg">
+                    <div class="col-details">
+                        <p>HP Pavilion x360 14-BA164tx Laptop - Silver</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 14.899.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/acer/12/As_ES1-132_Black-photogallery-02.png">
+                    <div class="col-details">
+                        <p>Acer Aspire ES1-132 Notebook - Black [11 Inch/ N3350/ 2GB/ 500GB/ Win 10]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 3.565.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/laptop/consumer/asus/10/asus_asus-a442ur-ga041t-dark-grey--core-i5-8250u-4gb-1tb-gt930mx-2gb-14--win10_full04.jpg">
+                    <div class="col-details">
+                        <p>Asus E203NAH-FD411T Notebook - Star Grey [N3350/4GB/500GB/11.6 Inch/Win 10]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 3.542.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>               
+
+            </div>
+            <a href="#!" class="hide-on-small-only next_ipod"><img src="images/next.png"></a>
+        </div>
+        <div class="slider" id="iphone">
+            <a href="#!" class="hide-on-small-only prev_iphone"><img src="images/prev.png"></a>
+            <div class="carousel carousel4 row slider2">
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/keyboard/4/nHBfsgAAAQAAAAkANdxCNwACj10%20-min.jpg">
+                    <div class="col-details">
+                        <p>HAVIT Keyboard Gaming Backlite Usb 3.0 HV-KB414L</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 129.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/mouse/8/nHBfsgAABAAAABIAAV-QbgAA71E%20-min.jpg">
+                    <div class="col-details">
+                        <p>Logitech G302 Daedalus Prime MOBA Gaming Mouse - Hitam</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 489.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/headphone/10/nHBfsgAAAQAAABkAAaZBtwACXsc%20-min.jpg">
+                    <div class="col-details">
+                        <p>PHILIPS SHS 5200 SPORT HEADPHONE HITAM</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 213.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/headphone/2/nHBfsgAABwAAAAQAAHHMbwAAhg0%20-min.jpg">
+                    <div class="col-details">
+                        <p>Audio Technica ATH-M20X Monitoring Headphone</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 485.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/mousepad/16/nHBfsgAACgAAABMAMwu59QAC_vQ%20-min.jpg">
+                    <div class="col-details">
+                        <p>HAVIT Mousepad Gaming HV-MP838</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 15.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/mouse/14/nHBfsgAABwAAAB0AJFWgtQADPN4%20-min.jpg">
+                    <div class="col-details">
+                        <p>TT eSports Saphira Team DK Series Gaming Mouse</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 473.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>                
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/accesories/keyboard/16/nHBfsgAAAgAAAAQAEZTnFwAHTVg%20-min.jpg">
+                    <div class="col-details">
+                        <p>Mini Wireless Keyboard Multi-media Remote Control Touchpad Handheld Keyboard</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 161.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>             
+            </div>
+            <a href="#!" class="hide-on-small-only next_iphone"><img src="images/next.png"></a>
+        </div>
+        <div class="slider" id="ipad">
+            <a href="#!" class="hide-on-small-only prev_ipad"><img src="images/prev.png"></a>
+            <div class="carousel carousel5 row slider2">
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/motherboard/5/nHBfsgAAAgAAAAYANtrLXwADEkU%20-min.jpg">
+                    <div class="col-details">
+                        <p>ASUS Prime Z370-P Socket 1151 Intel Motherboard</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 3.200.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/motherboard/3/nHBfsgAAugAAABwAAFpCxAADurM%20-min.jpg">
+                    <div class="col-details">
+                        <p>MSI H310M Gaming Artic/ 2x PCIEx1 / 1x PCIEx16 / DVI/ HDMI Intel Socket 1151 m-ATX Motherboard</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 1.450.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/ssd/7/sandisk_sandisk-ssd-plus-sdssda-g26-solid-state-drive--240-gb-_full02%20-min.jpg">
+                    <div class="col-details">
+                        <p>SanDisk - SSD Plus Solid State Drive [240 GB/SDSSDA-240G-G26]</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 1.152.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/gpu/4/nHBfsgAADAAAAB0AD5FsTQACI5c-min.png">
+                    <div class="col-details">
+                        <p>GIGABYTE Radeon RX VEGA 64 GAMING OC 8G - GV-RXVEGA64GAMING OC-8GD</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 13.999.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/gpu/10/nHBfsgAAEAAAAAcAAcV1dgAKDHE%20-min.jpg">
+                    <div class="col-details">
+                        <p>ALAX nVidia Geforce GTX 1060 OC (OVERCLOCK) 6GB DDR5 - Dual Fan</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 5.179.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/processor/6/ryzen_amd-ryzen-5-1400-box-cpu-prosesor_full03%20-min.jpg">
+                    <div class="col-details">
+                        <p>AMD RYZEN 5 1400 BOX CPU Prosesor</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 2.399.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>               
+                <a class="carousel-item no-white" href="#!">
+                    <img src="assets/product/hardware/processor/2/nHBfsgAABAAAAB4ANqAStQABGRU%20-min.jpg">
+                    <div class="col-details">
+                        <p>INTEL Core i5-7400 2.4 GHz LGA 1151 Kaby Lake - Cache 6MB - CORE/THREADS 4/4</p>
+                    </div>
+                    <div class="price row">
+                        <div class="col s6" style="text-align: left;">
+                            Rp 2.649.000
+                        </div>
+                        <div class="col s6" style="text-align: right;">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/star.png">
+                            <img src="images/unstar.png">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="#!" class="hide-on-small-only next_ipad"><img src="images/next.png"></a>
         </div>
         <footer class="page-footer" style="background: #857a7a">
           <div class="container">
@@ -96,7 +1196,7 @@
           </div>
           <div class="footer-copyright">
             <div class="container" style="line-height: 28px;">
-            © 2018 Gero Indonesia
+             &copy; 2018 Gero Indonesia
             <a class="grey-text text-lighten-4 right" style="font-size: 25px; font-weight: 700;" href="#!">Gero</a>
             </div>
           </div>
@@ -104,8 +1204,10 @@
         
         <!--JavaScript at end of body for optimized loading-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/jquery.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/feed.js"></script>
         
     </body>
   </html>

@@ -1,0 +1,30 @@
+GIGABYTE Radeon RX VEGA 64 GAMING OC 8G - GV-RXVEGA64GAMING OC-8GD
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 13,999,000
+
+Detail
+
+- Stream Processors: 4096
+
+- Base Clock: 1276 MHz
+
+- Boost Clock: 1560 MHz
+
+- Speed: 1.9 Gbps
+
+- Configuration: 8 GB
+
+- Interface: HBM2
+
+- Interface Width: 2048-bit
+
+- Bandwidth: 484 GB/s
+
+- Interface: PCI Express 3.0 x16
+
+- Power Consumption: 295 W
+
+- Recommended System Power Requirement: 750 W
+
+- PCI Power Connectors: 2 x 8-pin

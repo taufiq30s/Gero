@@ -1,0 +1,53 @@
+AMD Ryzen Threadripper 1900X 3.8Ghz Up To 4.0Ghz Cache 16MB 180W TR4 - 8 Core
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 8,399,000
+
+AMD Ryzen Threadripper 1900X 3.8Ghz Up To 4.0Ghz Cache 16MB 180W TR4 - 8 Core
+
+
+
+AMD Ryzen Threadripper 1900X 3.8Ghz Up To 4.0Ghz Cache 16MB 180W TR4 - 8 Core merupakan CPU proccessor persembahan AMD yang dirancang memberikan kinerja yang handal pada platform utama X399 untuk desktop Anda. Hadir dalam 8 Core dan 16 thread pada CPU proccessor memberikan kinerja lebih maksimal. CPU proccessor ini memiliki Quad channel DDR4 dengan dukungan ECC yang memberikan hroughput yang lebih handal ketika digunakan. Selain itu, CPU proccessor persembahan AMD ini dilengkapi dengan teknologi AMD SenseMI yang membuat CPU proccessor ini siap menghadirkan kinerja yang lebih cepat dari pada sebelumnya.
+
+
+
+Detail
+
+- CPU Cores: 8 Core
+
+- Threads: 16
+
+- Base Clock Speed: 3.8GHz
+
+- Max Turbo Core Speed: 4GHz
+
+- Total L1 Cache: 768MB
+
+- Total L2 Cache: 4MB
+
+- Total L3 Cache: 16MB
+
+- Unlocked: Yes
+
+- CMOS: 14nm
+
+- Package: sTR4
+
+- PCI Express Version: PCIe 3.0
+
+- Default TDP / TDP: 180W
+
+- Max Temps: 68&deg;C
+
+- Max System Memory Speed: 2667MHz
+
+- System Memory Type: DDR4
+
+- Memory Channels: 4
+
+- Product Family: AMD Ryzen
+
+- Product Line: AMD Ryzen Threadripper
+
+- Platform: Desktop
+

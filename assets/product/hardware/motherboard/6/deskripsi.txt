@@ -1,0 +1,44 @@
+MSI Motherboard H81M-P33 1xPCIE V/D H81M-P33 m-ATX Motherboard
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 827,000
+
+Detail:
+
+- FORM FACTOR M-ATX
+
+- SOCKET 1150
+
+- CPU (MAX SUPPORT) i7
+
+- BASECLOCK/HYPER TRANSPORT 100MHz
+
+- Intel H81 Express
+
+- DDR3 MEMORY DDR3 1066/1333/1600 MHz
+
+- PCI-E GEN Gen2(16) 
+
+- VGA MAX SHARE MEMORY (MB) 1024
+
+- Supports 4th Gen Intel Core/ Pentium/ Celeron processors for LGA 1150 socket
+
+- Supports DDR3-1600 Memory
+
+- USB 3.0 + SATA 6Gb/s
+
+- Military Class 4: Top Quality & Stability
+
+- Military Class Essentials: Total Protection for Military Class Motherboards
+
+- OC Genie 4: Overclock in 1 Second
+
+- Click BIOS 4: Easily Fine-tune Your System
+
+- Command Center: Control & Customize Your PC Settings
+
+- Fast Boot: Quickly Boot Up & Enter OS in A Few Seconds
+
+- M-Flash: Simply Update & Backup Your BIOS
+
+- Live Update 5: Easily Update The Latest BIOS & Drivers

@@ -1,0 +1,29 @@
+SUS Prime Z370-P Socket 1151 Intel Motherboard
+0 Respon Pelanggan Garansi: 3 tahun garansi resmi
+Harga:
+Rp 3,200,000
+
+Detail
+
+- CPU: Intel Socket 1151 for 8th Generation Core™ Processors  
+
+- Chipset: Intel Z370
+
+- Memory: 4 x DIMM, Max. 64GB, Un-buffered Memory
+
+- Graphic: Integrated Graphics Processor, Intel HD Graphics support 
+
+- Multi-GPU Support: Supports AMD CrossFireX Technology 
+
+- Expansion Slots: 1 x PCIe 3.0/2.0 x16 (x16, x8/x4+x4), 1 x PCIe 3.0/2.0 x16 (max at x4 mode), 4 x PCIe 3.0/2.0 x1 
+
+- LAN: Realtek RTL8111H, 1 x Gigabit LAN Controller(s), ASUS LAN Guard
+
+- Audio: Realtek ALC887 8-Channel High Definition Audio CODEC 
+
+- Operating System: Windows 10 64-bit
+
+- Form Factor: ATX Form Factor
+
+
+
