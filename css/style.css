@@ -215,7 +215,8 @@ nav ul a {color: #333;}
     .btn-submit > a:last-child{margin-left: 0px;}
     .product1{flex-direction: column;}
     .prod > .product-img{width: 90%; height: 90%; margin-left: 10%;}
-    .prod> .product-info{width: 65%;}
+    .prod> .product-info{width: 90%;}
+    .prod > .product-info a{font-size: 12px;}
     .product2{flex-direction: column;}
     .product3{flex-direction: column;}
     .product4{flex-direction: column;}
