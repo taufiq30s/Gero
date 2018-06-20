@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Pembayaran</title>
+
+	<style>
+
+		.container {
+			margin-top: 50px;
+            text-align: center;
+		}
+
+		img {
+			width: 150px;
+		}
+
+		button {
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+		
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col s12 login-form">
+				<form action="payproccess.html" method="POST">
+					<h5>Menunggu Pembayaran</h5>
+                    
+                    <div class="col s12">
+                        <p><img src="images/indomaret.png" alt=""></p>
+                    </div>
+
+                    <div class="col s12">
+                        <h6>Kode Pembayaran</h6>
+                        <h4>RDTR2611IIJJ</h4>
+                        <h6>Jumlah yang harus dibayar</h6>
+                        <h4>Rp 28,999,000</h4>                        
+                        <p>Mohon selesaikan pembayaran Anda sebelum tanggal 26 Juni 2018, pembayaran otomatis dibatalkan apabila Anda tidak melakukan pembayaran lebih dari 1 hari setelah kode pembayaran diberikan</p>
+                    </div>
+				</form>
+			</div>
+				
+		</div><!-- End container -->
+
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+			$('select').formSelect();
+		});
+		
+	</script>
+</body>
+</html>
+        

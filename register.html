@@ -5,6 +5,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:b" rel="stylesheet">
 
 	<title>Register to Gero</title>
 
@@ -20,23 +21,91 @@
             <li><span>Image 06</span></li>
 </ul>
 
-	<div class="navbar-fixed">
+	<div class="navbar-fixed" style="z-index: 9999">
 
-		<!-- Main Navbar / Desktop Mode -->
-			<nav>
-				<div class="nav-wrapper navsign">
-					<a href="#!" class="brand-logo">Gero</a>
-					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="index.html">Home</a></li>
-					</ul>
-				</div>	
-			</nav>
-		
-			<!-- Side Navbar / Mobile Mode -->
-			<ul class="sidenav" id="mobile-demo">
-				<li><a href="#">home</a></li>
-			</ul>
+		<!-- Declarate dropdown value -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href = "desktop.html" style="color: #e53935">Desktop Computer</a></li>
+            <li><a href = "gdesktop.html" style="color: #e53935">Gaming Computer</a></li>
+            <li><a href = "laptop.html" style="color: #e53935">Entry Laptop</a></li>
+            <li><a href = "glaptop.html" style="color: #e53935">Gaming Laptop</a></li>
+            <li><a href = "accesories.html" style="color: #e53935">Computer Accesories</a></li>
+            <li><a href = "component.html" style="color: #e53935">Computer Component</a></li>
+        </ul>
+        
+        <header>
+            <div class="navbar-fixed" style="position: fixed; z-index: 9999">
+                <nav>
+                    <div class="nav-wrapper navbaru">
+                        <!-- menu when mobile mode -->
+                        <a href="#" data-target="slide-out-mob" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <a href="index.html" class="brand-logo" style="font-size: 40px;">gero</a>
+                        
+                        <ul id="nav-mobile" class="left hide-on-med-and-down option main-new">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+                        <ul id="nav-mobile right-nav-new" class="right hide-on-med-and-down option" style="margin-right: 30px;">
+                            <li>
+                                <div class="row">
+                                  <form>
+                                    <div class="input-field" style="margin-right: 20px; width: 350px;">
+                                        <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                        <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                        <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                        <ul class="autocomplete-content dropdown-content"></ul>
+                                    </div>
+                                  </form>
+                                </div>
+                            </li>
+                            <li id="login" style="display: none;"><a class="dropdown-button-user" href="#!" data-target="user"><img src="images/user.svg" alt="" class="circle" width="" center="" style="
+                                top: 9px;
+                                right: 5px;
+                                width: 30px;
+                                position: relative;
+                            "> User</a></li>
+                            <li id="no-login" style="display: none;"><a href="login.html">Sign in</a></li>
+                            <li><a href="#">Card(2)</a></li>                         
+                        </ul>
+                        
+                        <!-- Sidenav Content (For Mobile Version) -->
+                        <ul id="slide-out-mob" class="sidenav grey darken-3">
+                            <li>
+                                <div class="input-field" >
+                                    <div class="input-field row">
+                                          <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                          <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                          <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect waves-red" href="#"  style="color: white;">Category <i class="material-icons right" style="color: white;">arrow_drop_down</i></a> 
+                                        <div class="collapsible-body">
+                                            <ul class="grey darken-4">
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Desktop Computer</a></li>
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Gaming Computer</a></li>
+                                                <li><a href = "laptop.html" class="waves-effect waves-red" style="color: white;">Entry Laptop</a></li>
+                                                <li><a href = "glaptop.html" class="waves-effect waves-red" style="color: white;">Gaming Laptop</a></li>
+                                                <li><a href = "accesories.html" class="waves-effect waves-red" style="color: white;">Computer Accesories</a></li>
+                                                <li><a href = "component.html" class="waves-effect waves-red" style="color: white;">Computer Component</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <div class="divider"></div>
+                            <li><a href="#" class="waves-effect waves-red" style="color: white; padding: 0 16px;">Card</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div> 
+            
+        </header>
 
 	</div>
 		
@@ -45,7 +114,7 @@
 		
 		<div class="row">
 			<div class="col s12 m8 offset-m2 login-form">
-				<form action="#">
+				<form action="#" class="log">
                     <h4>Sign up</h4>
                     <div class="input-field col s12">
 						<input id="name" type="text" class="validate" required>
@@ -68,8 +137,9 @@
 					</div>
 
 					<div class="col s12 btn-submit">
-						<button class="btn waves-effect waves-light light-green darken-4" type="submit" name="action">Sign up</button>
-						<a href="login.html" class="btn waves-effect waves-light light-blue darken-4" style="margin-left: 10px;">Have Account ?</a>
+                        <a href="index.html" class="btn waves-effect waves-light light-green darken-4">Sign up</a>
+						<a href="login.html" class="btn waves-effect waves-light light-blue darken-4"
+                           >Have Account ?</a>
 					</div>
 				</form>
 			</div><!-- End login-form -->

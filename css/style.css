@@ -1,3 +1,9 @@
+@font-face{
+    font-family:pesan;
+    src: url("../css/Vox_Regular.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+
 .main-product-info{
     position: absolute;
     left: 3%;
@@ -145,9 +151,9 @@ a:active, a:focus{outline: none; border: 0;}
 .product-info .btn:hover{color: #fff; background-color: #184274;}
 .prod{height: 500px;}
 .main-product-info .btn:hover{color: #fff; background-color: #f12d2e;}
-.main-new > li:first-child{margin-left: 130px;}
+.main-new > li:first-child{margin-left: 150px;}
 .main-new > li:nth-child(2) a{width: 200px;}
-.brand-logo{margin-left: 35px;}
+.brand-logo{margin-left: 35px; font-family: 'Montserrat Alternates';}
 
 #right-nav-new > li:first-child{width: 50%;}
 .message{
@@ -155,13 +161,16 @@ a:active, a:focus{outline: none; border: 0;}
 	top: 15%;
 	left: 5%;
 }
+.message > p{font-family: pesan; font-weight: 500; font-size: 25px;}
 .message .btn{
-	margin-right: 15px;
+	margin-right: 50px;
 }
+.message #opt{text-align: center;}
+#opt .btn:first-child{width: 85px;}
 .not-found{background: url(../images/error/main.png); background-repeat: no-repeat; background-position: absolute; background-size: 100%;}
 
 /*=== Responsive Area ===*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 801px){
     .brand-logo{margin-left: 0;}
     .product3 > .product-info > a{width: 270px;}
 	.product3 > .product-info {width: 57%;}
@@ -173,10 +182,12 @@ a:active, a:focus{outline: none; border: 0;}
 	.language{margin-top: 5px;}
 }
 
+
+
 /* Login Page Style */
 .login-form {
     margin-top: 50px;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.85);
     border: 1px solid #ccc;
     height: auto;
     z-index: 1;
@@ -188,12 +199,30 @@ input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-defaul
 input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), 
 input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), 
 textarea.materialize-textarea { border-bottom: 1px solid #dddddd;}
-.btn-submit {margin-bottom: 20px;}
+.btn-submit {margin-bottom: 20px; }
+.btn-submit > a:last-child{margin-left: 10px;}
 a.brand-logo {color: #333;}
 nav {box-shadow: none;}
 nav ul a {color: #333;}
 .navsign{color: white;}
 .navsign > ul > li > a{font-weight: 600; font-size: 1rem;}
+
+/* Responsive */
+@media screen and (max-width: 400px){
+    .btn-submit > a{display: block; margin-right: 0;}
+    .btn-submit {text-align: center;}
+    .btn-submit > a:first-child{margin-bottom: 20px;}
+    .btn-submit > a:last-child{margin-left: 0px;}
+    .product1{flex-direction: column;}
+    .prod > .product-img{width: 90%; height: 90%; margin-left: 10%;}
+    .prod> .product-info{width: 65%;}
+    .product2{flex-direction: column;}
+    .product3{flex-direction: column;}
+    .product4{flex-direction: column;}
+    .product5{flex-direction: column;}
+    .product6{flex-direction: column;}
+    
+}
 
 /* Background Slideshow */
 .cb-slideshow,

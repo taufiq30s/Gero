@@ -126,7 +126,7 @@ function mobileMode(a, session){
 		}
 	}
 }
-var width = window.matchMedia("(max-width: 700px)")
+var width = window.matchMedia("(max-width: 801px)")
 responsive(width);
 width.addListener(responsive);
 width.addListener(mobileMode);
@@ -147,5 +147,46 @@ if(email != null){
 function logout(){
 	sessionStorage.clear();
 	location.reload();
+}
+
+/* 404 Page Function */
+function back(){
+	window.history.back();
+}
+
+function home(){
+	document.getElementById("msg").style.display="none";
+	document.getElementById("nav-error").style.display="none";
+	
+	var cycle = 0;
+    var allBackgrounds = [ "images/error/1.png", 
+                           "images/error/2.png", 
+                           "images/error/3.png",
+                           "images/error/4.png",
+                           "images/error/5.png",
+                           "images/error/6.png",
+                           "images/error/7.png",
+                           "images/error/8.png",
+                           "images/error/9.png",
+                           "images/error/10.png",
+                           "images/error/12.png",
+                           "images/error/13.png",
+                           "images/error/14.png",
+                           "images/error/15.png",
+                           "images/error/16.png",
+                           "images/error/17.png"
+                         ];
+    
+    setInterval(function() {
+        if (cycle < 16) {
+            document.body.style.backgroundImage = "url('" + allBackgrounds[cycle] + "')";
+            cycle += 1;
+        } else { 
+            clearTimeout();
+            document.body.style.backgroundColor = "black";
+            document.body.style.backgroundImage="none";
+            //setTimeout(window.location.href="index.html", 1200);
+        }
+    }, 400);
 }
         

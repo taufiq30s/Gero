@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>Pembayaran</title>
+
+	<style>
+
+		.container {
+			margin-top: 50px;
+		}
+
+		img {
+			width: 100px;
+		}
+
+		button {
+			margin-top: 50px;
+		}
+	</style>
+</head>
+
+<body>
+		
+
+	<div class="container">
+		
+		<div class="row">
+			<div class="col s12 login-form">
+				<form action="payproccess.html" method="POST">
+					<h5>Pilih Metode Pembayaran</h5>
+					<br>
+                    
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/bni.png" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/bri.png" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/bca.png" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="hidden" />
+								<span><img src="" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+								<label>
+									<input name="pay" type="hidden" />
+									<span><img src="" alt=""></span>
+								</label>
+							</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/mandiri.png" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/indomaret.png" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/jne.png" alt=""></span>
+							</label>
+						</div>
+
+						<div class="col s12 m4">
+							<label>
+								<input name="pay" type="radio" />
+								<span><img src="images/kredivo.png" alt=""></span>
+							</label>
+						</div>
+					<div class="col s12 btn-submit">
+						<button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action">Next</button>
+					</div>
+				</form>
+			</div>
+				
+		</div><!-- End container -->
+
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+			$('select').formSelect();
+		});
+		
+	</script>
+</body>
+</html>
+        
