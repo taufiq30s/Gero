@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="newest stylesheet" href="../../css/style.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:b" rel="stylesheet">
+        
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Gero</title>
+        <style>.parallax-container {height: 530px; }</style>
+    </head>
+	<body>
+		<!-- Declarate dropdown value -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href = "../desktop.html" style="color: #e53935">Desktop Computer</a></li>
+            <li><a href = "../gdesktop.html" style="color: #e53935">Gaming Computer</a></li>
+            <li><a href = "../laptop.html" style="color: #e53935">Entry Laptop</a></li>
+            <li><a href = "../glaptop.html" style="color: #e53935">Gaming Laptop</a></li>
+            <li><a href = "../accesories.html" style="color: #e53935">Computer Accesories</a></li>
+            <li><a href = "../component.html" style="color: #e53935">Computer Component</a></li>
+        </ul>
+        <ul id='user' class='dropdown-content' style="width: 300px !important">
+            <li><a href="#" class="waves-effect waves-light" style="color: #e53935">My Account</a></li>
+            <li><a href="#!" onclick="logout()" class="waves-effect waves-light" style="color: #e53935">Log Out</a></li>
+        </ul>
+        
+        <header>
+            <div class="navbar-fixed" style="position: fixed; z-index: 9999">
+                <nav>
+                    <div class="nav-wrapper navbaru" id="nav-product">
+                        <!-- menu when mobile mode -->
+                        <a href="login.html" class="sidenav-trigger right" id="no-login-mob" style="display: none"><i class="fas fa-sign-in-alt" style="font-size: 20px;"></i></a>
+                        <a href="#" data-target="slide-out-mob-user" class="sidenav-trigger" id="login-mob" style=""><i class="fas fa-user-alt" style="font-size: 20px;"></i></a>
+                        <a href="../../index.html" class="brand-logo" style="font-size: 40px;">gero</a>
+                        <a href="#" data-target="slide-out-mob" class="sidenav-trigger" id="menu"><i class="material-icons">menu</i></a>
+                        
+                        <ul id="nav-mobile" class="left hide-on-med-and-down option main-new">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+                        <ul id="nav-mobile right-nav-new" class="right hide-on-med-and-down option" style="margin-right: 30px;">
+                            <li>
+                                <div class="row">
+                                  <form>
+                                    <div class="input-field" style="margin-right: 20px; width: 350px;">
+                                        <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                        <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                        <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                        <ul class="autocomplete-content dropdown-content"></ul>
+                                    </div>
+                                  </form>
+                                </div>
+                            </li>
+                            <li id="login" style="display: none;"><a class="dropdown-button-user" href="#!" data-target="user"><img src="images/user.svg" alt="" class="circle" width="" center="" style="
+                                top: 9px;
+                                right: 5px;
+                                width: 30px;
+                                position: relative;
+                            "> User</a></li>
+                            <li id="no-login" style="display: none;"><a href="login.html">Sign in</a></li>
+                            <li><a href="#">Card(2)</a></li>                         
+                        </ul>
+                        
+                        <!-- Sidenav Content (For Mobile Version) -->
+                        <ul id="slide-out-mob" class="sidenav grey darken-3">
+                            <li>
+                                <div class="input-field" >
+                                    <div class="input-field row">
+                                          <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                          <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                          <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect waves-red" href="#"  style="color: white;">Category <i class="material-icons right" style="color: white;">arrow_drop_down</i></a> 
+                                        <div class="collapsible-body">
+                                            <ul class="grey darken-4">
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Desktop Computer</a></li>
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Gaming Computer</a></li>
+                                                <li><a href = "laptop.html" class="waves-effect waves-red" style="color: white;">Entry Laptop</a></li>
+                                                <li><a href = "glaptop.html" class="waves-effect waves-red" style="color: white;">Gaming Laptop</a></li>
+                                                <li><a href = "accesories.html" class="waves-effect waves-red" style="color: white;">Computer Accesories</a></li>
+                                                <li><a href = "component.html" class="waves-effect waves-red" style="color: white;">Computer Component</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <div class="divider"></div>
+                            <li><a href="login.html" class="waves-effect waves-red" style="color: white; padding: 0 16px;">Account</a>
+                            </li>
+                            <li><a href="#" class="waves-effect waves-red" style="color: white; padding: 0 16px;">Card</a>
+                            </li>
+                        </ul>
+                        
+                        <ul id="slide-out-mob-user" class="sidenav user grey darken-3">
+                            <li><div class="user-view">
+                                    <div class="background">
+                                        <img src="https://materializecss.com/images/office.jpg">
+                                    </div>
+                                <a href="#user"><img class="circle" src="../../images/user.svg"></a>
+                                <a href="#name"><span class="white-text name">User</span></a>
+                                <a href="#email"><span class="white-text email">user@yapoo.com</span></a>
+                                </div>
+                            </li>
+                            <li><a href="#!" style="color: white"><i class="material-icons" style="color: white">account_box</i>My Account</a></li>
+                            <li><a href="#!" onclick="logout()" style="color: white"><i class="fas fa-sign-out-alt" style="color: white"></i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div> 
+            
+        </header>
+        <div class="row ">
+	        <div class="col s12 con-deskrip">
+	        	<div class="col s9 description_kiri">
+	        		<div class="col s5 des3">
+		        		<h5 class="red-text">Starter Kits</h5>
+		        		<h1 >Acer Predator</h1>
+		        		<p>
+		        			Acer Predator G1-710 Gaming Desktop PC [GeForce GTX1070 8GB]
+							The Predator G1 squeezes overwhelming gaming power into a compact body SoundBlaster X-Fi MB5 GeForce GTX 10 Turbo button, Sound-Reactive Growl Lights, Killer DoubleShot Pro PredatorSense, Dual Headset Cradles, VR Gaming ready
+		        		</p>
+		        	</div>
+		        	<div class="col s7 slider_des">
+			            <a href="#!" class="hide-on-small-only prev_des1"><img src="../../images/prev.png"></a>
+		        		<div class="carousel carousel1">
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/acer.png" class="responsive-img"></a>
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/acer.png" class="responsive-img"></a>
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/acer.png" class="responsive-img"></a>	
+			        	</div>
+			            <a href="#!" class="hide-on-small-only next_des1"><img src="../../images/next.png"></a>
+			        	<div class="col s12 icon_slide">
+			        		<a href="#!" class="col s2 icon_slide2 one"><img src="../../images/acer.png" class="responsive-img "></a>
+			        		<a href="#!" class="col s2 icon_slide2 two" ><img src="../../images/acer.png" class="responsive-img "></a>
+			        		<a href="#!" class="col s2 icon_slide2 three"><img src="../../images/acer.png" class="responsive-img "></a>
+			        	</div>
+
+		        	</div>	
+	        	</div>
+	        	<div class="col s9 description_kiri">
+	        		<div class="col s5 des3">
+		        		<h5 class="red-text">Starter Kits</h5>
+		        		<h1 >gaming Essentials</h1>
+		        		<p>
+		        			Get started in any  sport with our sport gear essential starter kits pick a kit get eqqipment and get out there
+		        			Get started in any  sport with our sport gear essential starter kits pick a kit get eqqipment and get out there
+		        		</p>
+		        	</div>
+		        	<div class="col s7 slider_des">
+			            <a href="#!" class="hide-on-small-only prev_des2"><img src="../../images/prev.png"></a>
+		        		<div class="carousel carousel2">
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/2.jpg" class="responsive-img"></a>
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/1.jpg" class="responsive-img"></a>
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/3.jpg" class="responsive-img"></a>	
+			        	</div>
+			            <a href="#!" class="hide-on-small-only next_des2"><img src="../../images/next.png"></a>
+			        	<div class="col s12 icon_slide">
+			        		<a href="#!" class="col s2 icon_slide2 one2"><img src="../../images/2.jpg" class="responsive-img "></a>
+			        		<a href="#!" class="col s2 icon_slide2 two2" ><img src="../../images/1.jpg" class="responsive-img "></a>
+			        		<a href="#!" class="col s2 icon_slide2 three2"><img src="../../images/3.jpg" class="responsive-img "></a>
+			        	</div>
+		        	</div>	
+	        	</div>
+	        	<div class="col s9 description_kiri">
+	        		<div class="col s5 des3">
+		        		<h5 class="red-text">Starter Kits</h5>
+		        		<h1 >gear Essentials</h1>
+		        		<p>
+		        			Get started in any  sport with our sport gear essential starter kits pick a kit get eqqipment and get out there
+		        			Get started in any  sport with our sport gear essential starter kits pick a kit get eqqipment and get out there
+		        		</p>
+		        	</div>
+		        	<div class="col s7 slider_des">
+			            <a href="#!" class="hide-on-small-only prev_des3"><img src="../../images/prev.png"></a>
+		        		<div class="carousel carousel3">
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/3.jpg" class="responsive-img"></a>
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/2.jpg" class="responsive-img"></a>
+			        		<a href="#!" class="carousel-item des_slide"><img src="../../images/1.jpg" class="responsive-img"></a>	
+			        	</div>
+			            <a href="#!" class="hide-on-small-only next_des3"><img src="../../images/next.png"></a>
+			        	<div class="col s12 icon_slide">
+			        		<a href="#!" class="col s2 icon_slide2 one3"><img src="../../images/3.jpg" class="responsive-img "></a>
+			        		<a href="#!" class="col s2 icon_slide2 two3" ><img src="../../images/2.jpg" class="responsive-img "></a>
+			        		<a href="#!" class="col s2 icon_slide2 three3"><img src="../../images/1.jpg" class="responsive-img "></a>
+			        	</div>
+
+		        	</div>	
+	        	</div>
+	        	<div class="col s3 anjur">
+	        		<div class="col s12">
+	        			<h5 class="Recommended">Recommended</h5>
+	        		</div>
+	        		<div class="col s12 satu">
+		        		<div class="col s4 tep">
+		        			<img src="../../images/acer.png" class="responsive-img">
+		        		</div>
+		        		<div class="col s8 des_right">
+		      				 <p>Acer Predator G1-710</p>
+		      				 <p>Gaming Desktop PC </p>
+		        		</div>
+	        		</div>
+	        		<div class="col s12 dua">
+		        		<div class="col s4 tep">
+		        			<img src="../../images/2.jpg" class="responsive-img">
+		        		</div>
+		        		<div class="col s8 des_right">
+		      				 <p>running walk</p>
+		      				 <p>zip ls sport</p>
+		        		</div>
+	        		</div>
+	        		<div class="col s12 tiga">
+		        		<div class="col s4 tep">
+		        			<img src="../../images/3.jpg" class="responsive-img">
+		        		</div>
+		        		<div class="col s8 des_right">
+		      				 <p>running walk</p>
+		      				 <p>zip ls sport</p>
+		        		</div>
+	        		</div>
+	        		<div class="col s12">
+	        			<button class="col s5 button">quantity</button>
+	        			<input class="col s6 right quan" type="number" name="" value="0" style="height:35px;">
+	        		</div>
+	        		<div class="col s12">
+	        			<a href="checkout.html"><button class="col s12 button merah">Add to Cart</button></a>
+	        		</div>
+	        	</div>
+	        </div>        	
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="../../js/jquery.js"></script>
+        <script type="text/javascript" src="../../js/materialize.min.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <script type="text/javascript" src="../../js/feed.js"></script>   
+        <!-- <script type="text/javascript" src="js/feed.js"></script> -->
+        <script type="text/javascript">
+    	$(document).ready(function(){
+		    // bagian slider 
+		    var instances6=M.Carousel.getInstance($('.carousel').carousel({
+		        dist:0,
+		        padding:50,
+		        duration:200,
+		        noWrap:false,
+		        // shift:-10,
+		    }));
+		    var instances5=M.Carousel.getInstance($('.carousel2').carousel({
+		        dist:0,
+		        padding:50,
+		        duration:200,
+		        noWrap:false,
+		        // shift:-10,
+		    }));
+		    var instances4=M.Carousel.getInstance($('.carousel3').carousel({
+		        dist:0,
+		        padding:50,
+		        duration:200,
+		        noWrap:false,
+		        // shift:-10,
+		    }));
+	        $('.one').click(function(){
+		        instances6.set(0);
+		    })
+		    $('.two').click(function(){
+		        instances6.set(1);
+		    })
+		    $('.three').click(function(){
+		        instances6.set(2);
+		    })
+	        $('.one2').click(function(){
+		        instances5.set(0);
+		    })
+		    $('.two2').click(function(){
+		        instances5.set(1);
+		    })
+		    $('.three2').click(function(){
+		        instances5.set(2);
+		    })
+	        $('.one3').click(function(){
+		        instances4.set(0);
+		    })
+		    $('.two3').click(function(){
+		        instances4.set(1);
+		    })
+		    $('.three3').click(function(){
+		        instances4.set(2);
+		    })
+		    $('.prev_des1').click(function(){
+		        instances6.prev(1);
+		    })
+		    $('.next_des1').click(function(){
+		        instances6.next(1);
+		    })
+		    $('.prev_des2').click(function(){
+		        instances5.prev(1);
+		    })
+		    $('.next_des2').click(function(){
+		        instances5.next(1);
+		    })
+		    $('.prev_des3').click(function(){
+		        instances4.prev(1);
+		    })
+		    $('.next_des3').click(function(){
+		        instances4.next(1);
+		    })
+		    $(".satu").click(function(){
+		    	ganti(".description_kiri",0,".prev_des1");
+		    })
+		    $(".satu").click();
+
+		    $(".dua").click(function(){
+		    	ganti(".description_kiri",1,".prev_des2");
+		    })
+		    $(".tiga").click(function(){
+		    	ganti(".description_kiri",2,".prev_des3");
+		    })
+		    function ganti(bag,no,move){
+			    var banyak=$(".description_kiri");
+			    for(i=0;i<banyak.length;i++){
+			    	banyak[i].style.display="none";
+			    }
+			    $(bag)[no].style.display="block";
+			    $(move).click();
+		    }
+
+		});
+        </script>
+	</body>
+</html>
