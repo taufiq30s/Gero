@@ -28,7 +28,7 @@
 		<!-- Main Navbar / Desktop Mode -->
 			<nav>
 				<div class="nav-wrapper navsign">
-					<a href="#!" class="brand-logo">Gero</a>
+					<a href="index.html" class="brand-logo">Gero</a>
 					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down">
 						<li><a href="index.html">Home</a></li>
@@ -48,7 +48,7 @@
 		
 		<div class="row">
 			<div class="col s12 m8 offset-m2 login-form">
-				<form action="#">
+                <form>
 					<h4>Sign in</h4>
 					<div class="input-field col s12">
 						<input id="email" type="email" class="validate" required>
@@ -61,10 +61,10 @@
 					</div>
 
 					<div class="col s12 btn-submit">
-						<button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action">Sign in</button>
+                        <a onclick="login()" class="btn waves-effect waves-light light-blue darken-4">Sign in</a>
                         <a href="register.html" class="btn waves-effect waves-light light-green darken-4" style="margin-left: 10px;">Not Have Account ?</a>
 					</div>
-				</form>
+                </form>
 			</div><!-- End login-form -->
 				
 		</div><!-- End container -->
@@ -77,6 +77,18 @@
 		$(document).ready(function(){
 			$('.sidenav').sidenav();
 		});
+        function login(){
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            if((email == "user@yapoo.com") && pass == "12345678"){
+                sessionStorage.setItem("email", email);
+                window.location.href="index.html";
+            }
+            else{
+                alert("Password salah");
+            }
+        }
+        
 		
 	</script>
 </body>

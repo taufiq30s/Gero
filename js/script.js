@@ -25,6 +25,7 @@ $(document).ready(function(){
         constrainWidth: true, 
         }
     );
+	$('.dropdown-button-user').dropdown({coverTrigger: false, constrainWidth: false});
     $('input.search').autocomplete({
         data: {
             "Headset" : null,
@@ -55,11 +56,96 @@ $(document).ready(function(){
     
     $('.collapsible').collapsible();
     $('.tabs').tabs();   
+    $('.menu').sidenav({edge: 'right'});
+	$('.user').sidenav();
+	$('.another').sidenav();
     
 });
 
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-});
+function responsive(x){
+	if(x.matches){
+		if((document.title) == "Gero"){
+			document.getElementById("parallax-img").src="images/main-mobile.png";
+			document.getElementById("prod1").classList.remove("s6");
+			document.getElementById("prod2").classList.remove("s6");
+			document.getElementById("prod3").classList.remove("s6");
+			document.getElementById("prod4").classList.remove("s6");
+			document.getElementById("prod5").classList.remove("s6");
+			document.getElementById("prod6").classList.remove("s6");
+			document.getElementById("prod1").classList.add("s12");
+			document.getElementById("prod2").classList.add("s12");
+			document.getElementById("prod3").classList.add("s12");
+			document.getElementById("prod4").classList.add("s12");
+			document.getElementById("prod5").classList.add("s12");
+			document.getElementById("prod6").classList.add("s12");
+		}
+		else if(((document.title) == "Terms of Use | Gero")|| (document.title) == "Privacy Policy | Gero"){
+			document.getElementById("lang").classList.remove("s11");
+			document.getElementById("lang").classList.add("s12");
+		}
+	}
+	else{
+		if((document.title) == "Gero"){
+			document.getElementById("parallax-img").src="images/main.jpg";
+			document.getElementById("prod1").classList.remove("s12");
+			document.getElementById("prod2").classList.remove("s12");
+			document.getElementById("prod3").classList.remove("s12");
+			document.getElementById("prod4").classList.remove("s12");
+			document.getElementById("prod5").classList.remove("s12");
+			document.getElementById("prod6").classList.remove("s12");
+			document.getElementById("prod1").classList.add("s6");
+			document.getElementById("prod2").classList.add("s6");
+			document.getElementById("prod3").classList.add("s6");
+			document.getElementById("prod4").classList.add("s6");
+			document.getElementById("prod5").classList.add("s6");
+			document.getElementById("prod6").classList.add("s6");
+		}
+		else if(((document.title) == "Terms of Use | Gero")|| (document.title) == "Privacy Policy | Gero"){
+			document.getElementById("lang").classList.remove("s12");
+			document.getElementById("lang").classList.add("s11");
+		}
+		document.getElementById("no-login-mob").style.display="none";
+		document.getElementById("login-mob").style.display="none";
+	}
+}
+function mobileMode(a, session){
+	if(a.matches){
+		if(session != null){
+			document.getElementById("no-login-mob").style.display="none";
+			document.getElementById("login-mob").style.display="initial";	
+			document.getElementById("slide-out-mob").classList.add("menu");
+			document.getElementById("slide-out-mob").classList.remove("another");
+			document.getElementById("menu").classList.add("right");	
+		}
+		else{
+			document.getElementById("no-login-mob").style.display="initial";
+			document.getElementById("login-mob").style.display="none";	
+			document.getElementById("menu").classList.remove("right");
+			document.getElementById("slide-out-mob").classList.remove("menu");
+			document.getElementById("slide-out-mob").classList.add("another");
+		}
+	}
+}
+var width = window.matchMedia("(max-width: 700px)")
+responsive(width);
+width.addListener(responsive);
+width.addListener(mobileMode);
 
+/*Dummy Login */
+var email = sessionStorage.getItem("email");
+if(email != null){
+	document.getElementById("no-login").style.display="none";
+	document.getElementById("login").style.display="list-item";
+	mobileMode(width, email);
+} else{
+	document.getElementById("no-login").style.display="list-item";
+	document.getElementById("login").style.display="none";
+	mobileMode(width, email);
+	
+}
+
+function logout(){
+	sessionStorage.clear();
+	location.reload();
+}
         

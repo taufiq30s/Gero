@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Terms of Use | Gero</title>
@@ -29,45 +29,130 @@
         </style>
     </head>
     <body>
+        <!-- Declarate dropdown value -->
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href = "desktop.html">Desktop Computer</a></li>
-            <li><a href = "gdesktop.html">Gaming Computer</a></li>
-            <li><a href = "laptop.html">Entry Laptop</a></li>
-            <li><a href = "glaptop.html">Gaming Laptop</a></li>
-            <li><a href = "accesories.html">Computer Accesories</a></li>
-            <li><a href = "component.html">Computer Component</a></li>
+            <li><a href = "desktop.html" style="color: #e53935">Desktop Computer</a></li>
+            <li><a href = "gdesktop.html" style="color: #e53935">Gaming Computer</a></li>
+            <li><a href = "laptop.html" style="color: #e53935">Entry Laptop</a></li>
+            <li><a href = "glaptop.html" style="color: #e53935">Gaming Laptop</a></li>
+            <li><a href = "accesories.html" style="color: #e53935">Computer Accesories</a></li>
+            <li><a href = "component.html" style="color: #e53935">Computer Component</a></li>
         </ul>
+        <ul id='user' class='dropdown-content' style="width: 300px !important">
+            <li><a href="#" class="waves-effect waves-light" style="color: #e53935">My Account</a></li>
+            <li><a href="#!" onclick="logout()" class="waves-effect waves-light" style="color: #e53935">Log Out</a></li>
+        </ul>
+        
         <header>
-            <div class="navbar-fixe" id="dynamicnav" style="">
+            <div class="navbar-fixe" id="dynamicnav" style="z-index: 99999">
                 <nav>
                     <div class="nav-wrapper navbaru">
-                        <a href="#" class="brand-logo">Gero</a>
+                        <!-- menu when mobile mode -->
+                        <a href="login.html" class="sidenav-trigger right" id="no-login-mob" style="display: none"><i class="fas fa-sign-in-alt" style="font-size: 20px;"></i></a>
+                        <a href="#" data-target="slide-out-mob-user" class="sidenav-trigger" id="login-mob" style=""><i class="fas fa-user-alt" style="font-size: 20px;"></i></a>
+                        <a href="index.html" class="brand-logo">Gero</a>
+                        <a href="#" data-target="slide-out-mob" class="sidenav-trigger" id="menu"><i class="material-icons">menu</i></a>
+                        
+                        <!-- Navbar Utama -->
                         <ul id="nav-mobile" class="left hide-on-med-and-down option main-new">
                             <li><a href="index.html">Home</a></li>
-                            <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right" style="color: white">arrow_drop_down</i></a></li>
                         </ul>
                         <ul id="nav-mobile right-nav-new" class="right hide-on-med-and-down option" style="margin-right: 30px;">
                             <li>
                                 <div class="row">
                                   <form>
-                                    <div class="input-field" style="margin-right: 20px;">
-                                      
-                                      <input id="search" type="search" placeholder="Search" class="search" required style="display: inline-block; height: 40px;">
-                                        
-                                      <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
-                                    <ul class="autocomplete-content dropdown-content"></ul>
+                                    <div class="input-field" style="margin-right: 20px; width: 350px;">
+                                        <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                        <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                        <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                        <ul class="autocomplete-content dropdown-content"></ul>
                                     </div>
                                   </form>
                                 </div>
                             </li>
-                            <li><a href="login.html">My Account</a></li>
+                            <li id="login" style="display: none;"><a class="dropdown-button-user" href="#!" data-target="user"><img src="images/user.svg" alt="" class="circle" width="" center="" style="
+                                top: 9px;
+                                right: 5px;
+                                width: 30px;
+                                position: relative;
+                            "> User</a></li>
+                            <li id="no-login" style="display: none;"><a href="login.html">Sign in</a></li>
                             <li><a href="#">Card(2)</a></li>                         
                         </ul>
+                        
+                        <!-- Sidenav Content (For Mobile Version) -->
+                        <ul id="slide-out-mob" class="sidenav grey ">
+                            <li>
+                                <div class="input-field" >
+                                    <div class="input-field row">
+                                          <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                          <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                          <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect waves-red" href="#" style="color: white">Category <i class="material-icons right" style="color: white">arrow_drop_down</i></a> 
+                                        <div class="collapsible-body">
+                                            <ul class="grey darken-1">
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Desktop Computer</a></li>
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Gaming Computer</a></li>
+                                                <li><a href = "laptop.html" class="waves-effect waves-red" style="color: white;">Entry Laptop</a></li>
+                                                <li><a href = "glaptop.html" class="waves-effect waves-red" style="color: white;">Gaming Laptop</a></li>
+                                                <li><a href = "accesories.html" class="waves-effect waves-red" style="color: white;">Computer Accesories</a></li>
+                                                <li><a href = "component.html" class="waves-effect waves-red" style="color: white;">Computer Component</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <div class="divider"></div>
+                            <li><a href="login.html" class="waves-effect waves-red" style="color: white; padding: 0 32px;">Account</a>
+                            </li>
+                            <li><a href="#" class="waves-effect waves-red" style="color: white; padding: 0 32px;">Card</a>
+                            </li>
+                            
+                            <div class="divider"></div>
+                            <li><a href="about.html" class=" waves-effect waves-red" style="color: white;">About Us</a></li>
+                            <li>
+                                <ul class="collapsible collapsible-accordion ">
+                                    <li class="active">
+                                        <a class="collapsible-header waves-effect waves-red" style="color: white;" href="tou.html">Terms and Conditions of Use</a>
+                                        <div class="collapsible-body">
+                                            <ul class="grey darken-1">
+                                                <li><a href="tou.html#general-terms" class="waves-effect waves-red" style="color: white;">General Terms</a></li>
+                                                <li><a href="tou.html#user-terms" class="waves-effect waves-red" style="color: white;">User Terms</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="privacy.html" class="waves-effect waves-red" style="color: white;">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        
+                        <ul id="slide-out-mob-user" class="sidenav user grey">
+                            <li><div class="user-view">
+                                    <div class="background">
+                                        <img src="https://materializecss.com/images/office.jpg">
+                                    </div>
+                                <a href="#user"><img class="circle" src="images/user.svg"></a>
+                                <a href="#name"><span class="white-text name">User</span></a>
+                                <a href="#email"><span class="white-text email">user@yapoo.com</span></a>
+                                </div>
+                            </li>
+                            <li><a href="#!" style="color: white"><i class="material-icons" style="color: white">account_box</i>My Account</a></li>
+                            <li><a href="#!" onclick="logout()" style="color: white"><i class="fas fa-sign-out-alt" style="color: white"></i>Sign Out</a></li>
+                        </ul>                        
                     </div>
                 </nav>
-                
             </div>            
         </header>
+        
         <ul id="slide-out" class="sidenav sidenav-fixed" style="z-index: 1;">
             <li><a href="about.html" class=" waves-effect waves-red">About Us</a></li>
             <li>
@@ -83,11 +168,11 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#!" class="waves-effect waves-red">Privacy Policy</a></li>
+            <li><a href="privacy.html" class="waves-effect waves-red">Privacy Policy</a></li>
         </ul>
         <main>
-            <div class="row">
-                <div class="col s11">
+            <div class="row language">
+                <div class="col s11" id="lang">
                     <ul class="tabs">
                         <li class="tab"><a href="#eng" class="active" onclick="eng()">English</a></li>
                         <li class="tab"><a href="#idn" onclick="idn()">Indonesia</a></li>
@@ -106,7 +191,7 @@
                     <h5 id="general-terms">General Terms</h5>
                     <ul class="daftar">
                         <li>Gero as a means of supporting business trying to provide various features and services to ensure the safety and comfort of its users</li><br>
-                        <li>Gero is authorized to take the necessary actions against suspected and / or indirectly allegedly misusing, manipulating, and / or violating the Terms of Use in Bukalapak, ranging from moderating, limiting the amount of account creation, limiting or terminating the right of any User to use the Service , or close the account without giving prior notice or information to the owner of the account in question.</li><br>
+                        <li>Gero is authorized to take the necessary actions against suspected and / or indirectly allegedly misusing, manipulating, and / or violating the Terms of Use in Gero, ranging from moderating, limiting the amount of account creation, limiting or terminating the right of any User to use the Service , or close the account without giving prior notice or information to the owner of the account in question.</li><br>
                         <li>Gero has the authority to take the necessary actions against User accounts, from moderating, limiting the amount of account creation, limiting or terminating the right of any User to use the service, or closing the account without giving notice or information first to the owner of the account in question.</li><br>
                         <li>Gero has the authority to make decisions on the issues that occur in every transaction.</li><br>
                         <li>Gero has additional security features of TFA (Two Factor Authentication). If the User activates the feature, Gero will send the OTP (One Time Password) code via SMS to the confirmed mobile phone number as the User account number. The OTP code is sent when: change of data in User account such as password, e-mail address, phone number, and / or account number; as well as changes and / or additions of addresses. Enter the OTP code only in the fields provided by Gero system. The OTP code is confidential and not to be communicated to other parties, including those in the name of Gero.</li><br>
@@ -122,7 +207,7 @@
                         <li>The use of any facilities provided by Gero indicates that the User has understood and agreed to any rules imposed by Gero.</li><br>
                         <li>While in the Gero platform, the User is strictly prohibited from submitting any type of content that is misleading, defamatory, or libelous, contains or interferes with SARA, discriminates, and / or corners others.</li><br>
                         <li>Users are not permitted to use Gero to violate any rules set by law in Indonesia or elsewhere.</li><br>
-                        <li>The User is responsible for any risks that arise in the future for the information it provides into Bukalapak, including but not limited to matters relating to copyright, trademark, industrial design, industrial layout design and patents on a product.</li><br>
+                        <li>The User is responsible for any risks that arise in the future for the information it provides into Gero, including but not limited to matters relating to copyright, trademark, industrial design, industrial layout design and patents on a product.</li><br>
                         <li>Users are required to respect the rights of other Users by not providing personal information to other parties without the party's consent.</li><br>
                         <li>Users are not allowed to send spam e-mail by referring to any part of Gero.</li><br>
                         <li>Gero reserves the right to block the use of the system against Users who violate Indonesian laws and regulations.</li><br>
@@ -142,7 +227,7 @@
                     <h5 id="umum">Ketentuan Umum</h5>
                     <ul class="daftar">
                         <li>Gero sebagai sarana pendukung bisnis mencoba menyediakan berbagai fitur dan layanan untuk memastikan keamanan dan kenyamanan penggunanya</li><br>
-                        <li>Gero berwenang untuk mengambil tindakan yang diperlukan terhadap dugaan dan / atau secara tidak langsung diduga menyalahgunakan, memanipulasi, dan / atau melanggar Ketentuan Penggunaan di Bukalapak, mulai dari moderasi, membatasi jumlah pembuatan akun, membatasi atau menghentikan hak setiap Pengguna untuk menggunakan Layanan, atau menutup akun tanpa memberikan pemberitahuan atau informasi sebelumnya kepada pemilik akun yang bersangkutan.</li><br>
+                        <li>Gero berwenang untuk mengambil tindakan yang diperlukan terhadap dugaan dan / atau secara tidak langsung diduga menyalahgunakan, memanipulasi, dan / atau melanggar Ketentuan Penggunaan di Gero, mulai dari moderasi, membatasi jumlah pembuatan akun, membatasi atau menghentikan hak setiap Pengguna untuk menggunakan Layanan, atau menutup akun tanpa memberikan pemberitahuan atau informasi sebelumnya kepada pemilik akun yang bersangkutan.</li><br>
                         
                         <li>Gero memiliki wewenang untuk mengambil tindakan yang diperlukan terhadap akun Pengguna, dari memoderasi, membatasi jumlah pembuatan akun, membatasi atau menghentikan hak setiap Pengguna untuk menggunakan layanan, atau menutup akun tanpa memberikan pemberitahuan atau informasi terlebih dahulu kepada pemilik akun yang dimaksud.</li><br>
                         
@@ -162,7 +247,7 @@
                         <li>Penggunaan fasilitas apa pun yang disediakan oleh Gero menunjukkan bahwa Pengguna telah memahami dan menyetujui peraturan yang diberlakukan oleh Gero.</li><br>
                         <li>Selama di platform Gero, Pengguna dilarang keras mengirimkan jenis konten apa pun yang menyesatkan, mencemarkan nama baik, atau memfitnah, berisi atau mengganggu SARA, membedakan, dan / atau memojokkan orang lain.</li><br>
                         <li>Pengguna tidak diizinkan menggunakan Gero untuk melanggar aturan apa pun yang ditetapkan oleh hukum di Indonesia atau di tempat lain.</li><br>
-                        <li>Pengguna bertanggung jawab atas segala risiko yang muncul di masa depan untuk informasi yang diberikannya ke Bukalapak, termasuk tetapi tidak terbatas pada hal-hal yang berkaitan dengan hak cipta, merek dagang, desain industri, desain tata letak industri dan paten pada suatu produk.</li><br>
+                        <li>Pengguna bertanggung jawab atas segala risiko yang muncul di masa depan untuk informasi yang diberikannya ke Gero, termasuk tetapi tidak terbatas pada hal-hal yang berkaitan dengan hak cipta, merek dagang, desain industri, desain tata letak industri dan paten pada suatu produk.</li><br>
                         <li>Pengguna diharuskan untuk menghormati hak Pengguna lain dengan tidak memberikan informasi pribadi kepada pihak lain tanpa persetujuan pihak tersebut.</li><br>
                         <li>Pengguna tidak diizinkan mengirim e-mail spam dengan merujuk ke bagian Gero mana pun.</li><br>
                         <li>Gero berhak memblokir penggunaan sistem terhadap Pengguna yang melanggar hukum dan peraturan Indonesia.</li><br>
@@ -184,7 +269,7 @@
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="about.html">About Us</a></li>
                   <li><a class="grey-text text-lighten-3" href="tou.html">Term Of Services</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                  <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -215,21 +300,28 @@
                 document.title = "Ketentuan Penggunaan | Gero";
             }
             
-            window.onscroll = function() {down()};
-            var header = document.getElementById("dynamicnav");
-            var sidenav = document.getElementById("slide-out");
-            var sticky = header.offsetTop;
-            sticky += 120;
-            function down(){
-                if(window.pageYOffset >= sticky) {
-                    header.classList.add("sticky");
-                    sidenav.style.position = "fixed";
-                } else if(window.pageYOffset < (sticky+100)){
-                    //alert("masuk");
-                    header.classList.remove("sticky");
-                    sidenav.style.position = "absolute";
+            function respons(x){
+                if(x.matches){
+                    window.onscroll = function() {down()};
+                    var header = document.getElementById("dynamicnav");
+                    var sidenav = document.getElementById("slide-out");
+                    var sticky = header.offsetTop;
+                    sticky += 120;
+                    function down(){
+                        if(window.pageYOffset >= sticky) {
+                            header.classList.add("sticky");
+                            sidenav.style.position = "fixed";
+                        } else if(window.pageYOffset < (sticky+100)){
+                            header.classList.remove("sticky");
+                            sidenav.style.position = "absolute";
+                        }
+                    } 
                 }
             }
+            
+            var width2 = window.matchMedia("(max-width: 700px)");
+            respons(width2);
+            width2.addListener(respons);
         </script>
     </body>
 </html>

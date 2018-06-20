@@ -1,12 +1,13 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="newest stylesheet" href="css/style.css">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Gero</title>
@@ -14,19 +15,30 @@
     </head>
 
     <body>
+        <!-- Declarate dropdown value -->
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href = "desktop.html">Desktop Computer</a></li>
-            <li><a href = "gdesktop.html">Gaming Computer</a></li>
-            <li><a href = "laptop.html">Entry Laptop</a></li>
-            <li><a href = "glaptop.html">Gaming Laptop</a></li>
-            <li><a href = "accesories.html">Computer Accesories</a></li>
-            <li><a href = "component.html">Computer Component</a></li>
+            <li><a href = "desktop.html" style="color: #e53935">Desktop Computer</a></li>
+            <li><a href = "gdesktop.html" style="color: #e53935">Gaming Computer</a></li>
+            <li><a href = "laptop.html" style="color: #e53935">Entry Laptop</a></li>
+            <li><a href = "glaptop.html" style="color: #e53935">Gaming Laptop</a></li>
+            <li><a href = "accesories.html" style="color: #e53935">Computer Accesories</a></li>
+            <li><a href = "component.html" style="color: #e53935">Computer Component</a></li>
         </ul>
+        <ul id='user' class='dropdown-content' style="width: 300px !important">
+            <li><a href="#" class="waves-effect waves-light" style="color: #e53935">My Account</a></li>
+            <li><a href="#!" onclick="logout()" class="waves-effect waves-light" style="color: #e53935">Log Out</a></li>
+        </ul>
+        
         <header>
-            <div class="navbar-fixed" style="position: fixed;">
+            <div class="navbar-fixed" style="position: fixed; z-index: 9999">
                 <nav>
                     <div class="nav-wrapper navbaru">
-                        <a href="#" class="brand-logo">Gero</a>
+                        <!-- menu when mobile mode -->
+                        <a href="login.html" class="sidenav-trigger right" id="no-login-mob" style="display: none"><i class="fas fa-sign-in-alt" style="font-size: 20px;"></i></a>
+                        <a href="#" data-target="slide-out-mob-user" class="sidenav-trigger" id="login-mob" style=""><i class="fas fa-user-alt" style="font-size: 20px;"></i></a>
+                        <a href="index.html" class="brand-logo">Gero</a>
+                        <a href="#" data-target="slide-out-mob" class="sidenav-trigger" id="menu"><i class="material-icons">menu</i></a>
+                        
                         <ul id="nav-mobile" class="left hide-on-med-and-down option main-new">
                             <li><a href="index.html">Home</a></li>
                             <li><a class="dropdown-button" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -35,23 +47,78 @@
                             <li>
                                 <div class="row">
                                   <form>
-                                    <div class="input-field" style="margin-right: 20px;">
-                                      
-                                      <input id="search" type="search" placeholder="Search" class="search" required style="display: inline-block; height: 40px;">
-                                        
-                                      <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
-                                    <ul class="autocomplete-content dropdown-content"></ul>
+                                    <div class="input-field" style="margin-right: 20px; width: 350px;">
+                                        <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                        <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                        <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                        <ul class="autocomplete-content dropdown-content"></ul>
                                     </div>
                                   </form>
                                 </div>
                             </li>
-                            <li><a href="login.html">My Account</a></li>
+                            <li id="login" style="display: none;"><a class="dropdown-button-user" href="#!" data-target="user"><img src="images/user.svg" alt="" class="circle" width="" center="" style="
+                                top: 9px;
+                                right: 5px;
+                                width: 30px;
+                                position: relative;
+                            "> User</a></li>
+                            <li id="no-login" style="display: none;"><a href="login.html">Sign in</a></li>
                             <li><a href="#">Card(2)</a></li>                         
+                        </ul>
+                        
+                        <!-- Sidenav Content (For Mobile Version) -->
+                        <ul id="slide-out-mob" class="sidenav grey darken-3">
+                            <li>
+                                <div class="input-field" >
+                                    <div class="input-field row">
+                                          <i class="material-icons prefix" style="margin-left: 2vh; display: inline; top: 0;">search</i>
+                                          <input id="search" type="search" placeholder="Search" class="col s12 search" placeholder="Search" required style="display: inline-block; height: 60px;">
+                                          <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect waves-red" href="#"  style="color: white;">Category <i class="material-icons right" style="color: white;">arrow_drop_down</i></a> 
+                                        <div class="collapsible-body">
+                                            <ul class="grey darken-4">
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Desktop Computer</a></li>
+                                                <li><a href="#" class="waves-effect waves-red" style="color: white;">Gaming Computer</a></li>
+                                                <li><a href = "laptop.html" class="waves-effect waves-red" style="color: white;">Entry Laptop</a></li>
+                                                <li><a href = "glaptop.html" class="waves-effect waves-red" style="color: white;">Gaming Laptop</a></li>
+                                                <li><a href = "accesories.html" class="waves-effect waves-red" style="color: white;">Computer Accesories</a></li>
+                                                <li><a href = "component.html" class="waves-effect waves-red" style="color: white;">Computer Component</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <div class="divider"></div>
+                            <li><a href="login.html" class="waves-effect waves-red" style="color: white; padding: 0 16px;">Account</a>
+                            </li>
+                            <li><a href="#" class="waves-effect waves-red" style="color: white; padding: 0 16px;">Card</a>
+                            </li>
+                        </ul>
+                        
+                        <ul id="slide-out-mob-user" class="sidenav user grey darken-3">
+                            <li><div class="user-view">
+                                    <div class="background">
+                                        <img src="https://materializecss.com/images/office.jpg">
+                                    </div>
+                                <a href="#user"><img class="circle" src="images/user.svg"></a>
+                                <a href="#name"><span class="white-text name">User</span></a>
+                                <a href="#email"><span class="white-text email">user@yapoo.com</span></a>
+                                </div>
+                            </li>
+                            <li><a href="#!" style="color: white"><i class="material-icons" style="color: white">account_box</i>My Account</a></li>
+                            <li><a href="#!" onclick="logout()" style="color: white"><i class="fas fa-sign-out-alt" style="color: white"></i>Sign Out</a></li>
                         </ul>
                     </div>
                 </nav>
-                
-            </div>            
+            </div> 
+            
         </header>
         <div class="parallax-container">
             <div class="main-product-info">
@@ -61,10 +128,10 @@
                 </p>
                 <a href="#" class="btn">Starts from Rp 23.899.000 </a>
             </div>
-            <div class="parallax"><img src="images/main.jpg"></div>
+            <div class="parallax" id="parallax"><img id="parallax-img" src="images/main.jpg"></div>
         </div>
         <div class="row popular">
-            <div class="col s6 prod product1 deep-orange darken-3">
+            <div class="col s6 prod product1 deep-orange darken-3" id="prod1">
                 <div class="product-info">
                     <span class="flow-text">Get Best Gaming Performance</span>
                     <span class="flow-text">with Best Headphone</span>
@@ -73,7 +140,7 @@
                 </div>
                 <div class="product-img"></div>
             </div>
-            <div class="col s6 prod product2">
+            <div class="col s6 prod product2" id="prod2">
                 <div class="product-info">
                     <span class="flow-text">Play your Game Anyware</span>
                     <span class="flow-text">with Best Gaming Laptop</span>
@@ -84,7 +151,7 @@
             </div>
         </div>
         <div class="row popular">
-            <div class="col s6 prod product3">
+            <div class="col s6 prod product3" id="prod3">
                 <div class="product-info">
                     <span class="flow-text">Best Mechanic Keyboard </span>
                     <span class="flow-text">for your Gaming and other purpose</span>
@@ -93,7 +160,7 @@
                 </div>
                 <div class="product-img"></div>
             </div>
-            <div class="col s6 prod product4 red darken-4">
+            <div class="col s6 prod product4 red darken-4" id="prod4">
                 <div class="product-info">
                     <span class="flow-text">Need Upgrade your PC Hardware?</span>
                     <p class="grey-text text-lighten-1">Get your best original Processor, Graphic Card, SSD, and many more with best price.</p>
@@ -103,7 +170,7 @@
             </div>
         </div> 
         <div class="row popular">
-            <div class="col s6 prod product5 blue darken-3">
+            <div class="col s6 prod product5 blue darken-3" id="prod5">
                 <div class="product-info">
                     <span class="flow-text">Desktop PC for your work</span>
                     <p class="grey-text text-lighten-1">Need Desktop PC for your work?<br> Get best powerfull Desktop PC for improve your productivity.</p>
@@ -111,7 +178,7 @@
                 </div>
                 <div class="product-img"></div>
             </div>
-            <div class="col s6 prod product6">
+            <div class="col s6 prod product6" id="prod6">
                 <div class="product-info">
                     <span class="flow-text">Get More Portable and More Stylish</span>
                     <span class="flow-text">with Best Laptop</span>
@@ -1184,12 +1251,12 @@
                 <h5 class="white-text">Welcome to Gero</h5>
                 <p class="grey-text text-lighten-4">This is Gero, Gear Online, the best online shop for PC Gamer and IT Users. We only sell original and best product for your needs. With simple and fluid website design and easy payment, free deliveries and COD, we make it easy for you to get what tou want to have. So, dont worry again, lets shop in Gero.</p>
               </div>
-              <div class="col l4 offset-l2 s12">
+              <div class="col l4 offset-l2 s12 index">
                 <h5 class="white-text">Gero</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Term Of Services</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Privacy Policy</a></li>
+                  <li><a class="grey-text text-lighten-3" href="about.html">About Us</a></li>
+                  <li><a class="grey-text text-lighten-3" href="tou.html">Term Of Services</a></li>
+                  <li><a class="grey-text text-lighten-3" href="privacy.html">Privacy Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -1208,6 +1275,11 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/feed.js"></script>
+        <script>
+            
+            
+            
+        </script>
         
     </body>
   </html>
