@@ -1,3 +1,19 @@
+/*Dummy Login */
+var email = sessionStorage.getItem("email");
+if(email != null){
+	document.getElementById("no-login").style.display="none";
+	document.getElementById("login").style.display="list-item";
+} else{
+	document.getElementById("no-login").style.display="list-item";
+	document.getElementById("login").style.display="none";
+	
+}
+
+function logout(){
+	sessionStorage.clear();
+	location.reload();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elems, 0);
@@ -126,28 +142,13 @@ function mobileMode(a, session){
 		}
 	}
 }
-var width = window.matchMedia("(max-width: 801px)")
+var width = window.matchMedia("(max-width: 801px)") 
+mobileMode(width, email);
 responsive(width);
 width.addListener(responsive);
 width.addListener(mobileMode);
 
-/*Dummy Login */
-var email = sessionStorage.getItem("email");
-if(email != null){
-	document.getElementById("no-login").style.display="none";
-	document.getElementById("login").style.display="list-item";
-	mobileMode(width, email);
-} else{
-	document.getElementById("no-login").style.display="list-item";
-	document.getElementById("login").style.display="none";
-	mobileMode(width, email);
-	
-}
 
-function logout(){
-	sessionStorage.clear();
-	location.reload();
-}
 
 /* 404 Page Function */
 function back(){

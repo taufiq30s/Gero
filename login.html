@@ -152,10 +152,13 @@
             var pass = document.getElementById("password").value;
             if((email == "user@yapoo.com") && pass == "12345678"){
                 sessionStorage.setItem("email", email);
-                window.location.href="index.html";
+                window.history.back();
             }
             else{
                 alert("Password salah");
+                document.getElementById("email").value='';
+                document.getElementById("password").value='';
+                document.getElementById("email").focus();
             }
         }
         

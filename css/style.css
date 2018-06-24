@@ -740,6 +740,14 @@ h1{
     line-height: 15px;
     font-family: arial;
 }
+.des_product_list p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
 .harga_product_item{
     color:orange;
     font-family: arial;
