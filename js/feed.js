@@ -20,6 +20,7 @@ $(document).ready(function(){
         noWrap:false,
         // shift:-10,
     }));
+    /**/
     var instances3=M.Carousel.getInstance($('.carousel3').carousel({
         dist:0,
         padding:50,
@@ -27,6 +28,13 @@ $(document).ready(function(){
         noWrap:false,
         // shift:-10,
     }));
+   /* var instances3a=M.Carousel.getInstance($('.carousel3a').carousel({
+        dist:0,
+        padding:50,
+        duration:200,
+        noWrap:false,
+        // shift:-10,
+    }));*/
     var instances4=M.Carousel.getInstance($('.carousel4').carousel({
         dist:0,
         padding:50,
@@ -41,6 +49,7 @@ $(document).ready(function(){
         noWrap:false,
         // shift:-10,
     }));
+    
     $('.prev').click(function(){
         instances.prev(1);
     })
